@@ -45,7 +45,7 @@ Develop a program that selects an optimal set of dishes from a menu to maximize 
 ```
 {
   "budget": 25,
-  "allergy": "flour",
+  "allergy": ["flour"],
   "calorieLimit": 700
 }
 ```
@@ -206,7 +206,7 @@ Inputs:</br>
 ```
 {
   "budget": 100,
-  "allergy": "basil",
+  "allergy": ["basil"],
   "calorieLimit": 1100
 }
 ```
