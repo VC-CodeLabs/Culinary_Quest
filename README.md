@@ -1,5 +1,9 @@
 # Culinary_Quest
 
+## Steps to run
+
+1. Install Elixir [here](https://elixir-lang.org/install.html)
+2. Run `mix deps.get && mix run`
 
 **Objective**</br>
 Elevate the "Best Meal" challenge by integrating personalized dietary constraints such as allergies and calorie limits. This scenario is designed to realistically simulate meal planning, taking into account each user's unique dietary requirements within a specified budget. Participants are encouraged to build upon solutions from the initial Best Meal challenge, enhancing and adapting them to meet these expanded criteria.
@@ -7,14 +11,15 @@ Elevate the "Best Meal" challenge by integrating personalized dietary constraint
 **Challenge Structure**</br>
 The challenge will involve reading from two JSON files:
 
-* menu.json - Contains the details about various dishes.
-* user_constraints.json - Contains user-specific constraints such as budget, allergies, and calorie limits.
-* Leave a comment in the code where I update the path for each file
+- menu.json - Contains the details about various dishes.
+- user_constraints.json - Contains user-specific constraints such as budget, allergies, and calorie limits.
+- Leave a comment in the code where I update the path for each file
 
 **Task**</br>
 Develop a program that selects an optimal set of dishes from a menu to maximize dining satisfaction, adhering to budgetary constraints, dietary restrictions, and caloric intake limitations. The selected dishes should provide the highest possible satisfaction without exceeding the budget and calorie limit, and must avoid ingredients that the user is allergic to.
 
 **Input Files**</br>
+
 1. menu.json</br>
 
 ```
@@ -39,6 +44,7 @@ Develop a program that selects an optimal set of dishes from a menu to maximize 
   ]
 }
 ```
+
 </br>
 2. user_constraints.json</br>
 
@@ -49,15 +55,18 @@ Develop a program that selects an optimal set of dishes from a menu to maximize 
   "calorieLimit": 700
 }
 ```
+
 **Requirements**</br>
-* Dish Selection: Exactly one dish must be selected from each category: Appetizer, Drink, Main Course, and Dessert.
-* Budget Compliance: The total cost of selected dishes must not exceed the specified budget.
-* Allergy Consideration: Dishes containing any allergenic ingredient listed in the user constraints must be excluded.
-* Calorie Limitation: The total calorie count of the selected dishes must stay within the specified limit.
-* Satisfaction Optimization: Among the feasible dish combinations, the one with the highest total satisfaction score should be selected. If there is a tie in satisfaction, the cheaper combination should be chosen.
+
+- Dish Selection: Exactly one dish must be selected from each category: Appetizer, Drink, Main Course, and Dessert.
+- Budget Compliance: The total cost of selected dishes must not exceed the specified budget.
+- Allergy Consideration: Dishes containing any allergenic ingredient listed in the user constraints must be excluded.
+- Calorie Limitation: The total calorie count of the selected dishes must stay within the specified limit.
+- Satisfaction Optimization: Among the feasible dish combinations, the one with the highest total satisfaction score should be selected. If there is a tie in satisfaction, the cheaper combination should be chosen.
 
 **Output**</br>
 When meal selection hits a snag due to the constraints, the program should respond with a whimsically worded JSON error message. Let's add a dash of creativity to make the messages engaging and a little humorous:
+
 ```
 {
   "error": "Culinary conundrum! We couldn't whip up a meal that meets all your gastronomic guidelines."
@@ -65,6 +74,7 @@ When meal selection hits a snag due to the constraints, the program should respo
 ```
 
 **For successful selections, the output should be:**</br>
+
 ```
 {
   "selectedFoods": [
@@ -78,27 +88,31 @@ When meal selection hits a snag due to the constraints, the program should respo
   "calories": 690
 }
 ```
+
 **Constraints**</br>
-* Choose any programming language you like
-* Feel free to create a solution from scratch or use any solution from the Best Meal challenge as a starting point
-* You can use any external libraries that you feel will help you
-* Feel free to use AI to assist your development - the only exception to this is you CANNOT USE AI TO WRITE A SOLUTION for you
-* Maximum Dishes Per Category: Each category can have up to 40 dishes.
-* Valid JSON: Input files will be well-formed and valid.
-* Calorie Range: Individual dishes will have calories not exceeding 2000.
-* Budget Limit: The budget will not exceed $1000.
-* Dish Name Uniqueness: Each dish name within a category will be unique.
-* Ingredient Specificity: Ingredients will be clearly listed; no unspecified or hidden ingredients.
+
+- Choose any programming language you like
+- Feel free to create a solution from scratch or use any solution from the Best Meal challenge as a starting point
+- You can use any external libraries that you feel will help you
+- Feel free to use AI to assist your development - the only exception to this is you CANNOT USE AI TO WRITE A SOLUTION for you
+- Maximum Dishes Per Category: Each category can have up to 40 dishes.
+- Valid JSON: Input files will be well-formed and valid.
+- Calorie Range: Individual dishes will have calories not exceeding 2000.
+- Budget Limit: The budget will not exceed $1000.
+- Dish Name Uniqueness: Each dish name within a category will be unique.
+- Ingredient Specificity: Ingredients will be clearly listed; no unspecified or hidden ingredients.
 
 **Scoring**</br>
-* Correctness and Completeness (60 points): Solutions must pass all provided test cases, including edge cases.
-* Code Quality and Style (30 points): Well-structured code with clear comments and good variable naming is expected. Summary of your thought process - Executive Summary to give an overview of what you're solutions does is required.
-* Performance and Efficiency (10 points): Fast execution times will be rewarded, but solutions must first and foremost be correct and complete.
+
+- Correctness and Completeness (60 points): Solutions must pass all provided test cases, including edge cases.
+- Code Quality and Style (30 points): Well-structured code with clear comments and good variable naming is expected. Summary of your thought process - Executive Summary to give an overview of what you're solutions does is required.
+- Performance and Efficiency (10 points): Fast execution times will be rewarded, but solutions must first and foremost be correct and complete.
 
 **Example:**</br>
 
 Inputs:</br>
 **menu.json**
+
 ```
 {
   "foods": [
@@ -203,6 +217,7 @@ Inputs:</br>
 ```
 
 **user_constraints.json**
+
 ```
 {
   "budget": 100,
@@ -212,6 +227,7 @@ Inputs:</br>
 ```
 
 **Output**
+
 ```
 {
   "selectedFoods": [
@@ -225,6 +241,7 @@ Inputs:</br>
   "calories": 1005
 }
 ```
+
 </br>
 
 **Submissions**</br>
