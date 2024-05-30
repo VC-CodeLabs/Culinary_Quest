@@ -50,7 +50,7 @@ Develop a program that selects an optimal set of dishes from a menu to maximize 
 }
 ```
 **Requirements**</br>
-* Dish Selection: At least one dish must be selected from each category: Appetizer, Drink, Main Course, and Dessert.
+* Dish Selection: Exactly one dish must be selected from each category: Appetizer, Drink, Main Course, and Dessert.
 * Budget Compliance: The total cost of selected dishes must not exceed the specified budget.
 * Allergy Consideration: Dishes containing any allergenic ingredient listed in the user constraints must be excluded.
 * Calorie Limitation: The total calorie count of the selected dishes must stay within the specified limit.
