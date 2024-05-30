@@ -92,7 +92,7 @@ When meal selection hits a snag due to the constraints, the program should respo
 
 **Scoring**</br>
 * Correctness and Completeness (60 points): Solutions must pass all provided test cases, including edge cases.
-* Code Quality and Style (30 points): Well-structured code with clear comments and good variable naming is expected.
+* Code Quality and Style (30 points): Well-structured code with clear comments and good variable naming is expected. Summary of your thought process - Executive Summary to give an overview of what you're solutions does is required.
 * Performance and Efficiency (10 points): Fast execution times will be rewarded, but solutions must first and foremost be correct and complete.
 
 **Example:**</br>
