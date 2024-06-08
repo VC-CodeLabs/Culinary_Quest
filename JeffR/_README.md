@@ -22,11 +22,11 @@ to enable debug output, use `-v`.  even with this enabled, you can redirect the 
 
 with the following command-line, an alternative menu file is used for input, verbose mode is enabled with output written to stderr, result.json will contain only the bestmeal or error json output.  
 
-`go run JeffR_BestMeal_Solution.go -f=menuFull.json -v >result.json`  
+`go run JeffR_CulinaryQuest_Solution.go -f=menuFull.json -v >result.json`  
 
 to redirect the debug logging to a separate file, add `2>{logFilespec}`:  
 
-`go run JeffR_BestMeal_Solution.go -f=menuFull.json -v >result.json 2>out.log`
+`go run JeffR_CulinaryQuest_Solution.go -f=menuFull.json -v >result.json 2>out.log`
 
 (works in bash/cmd)
 
@@ -36,7 +36,7 @@ to redirect the debug logging to a separate file, add `2>{logFilespec}`:
 
 powershell requires the -f to be prefixed with path and quoted; redirecting log output in powershell produces weird error in the log that can be ignored.
 
-`go run JeffR_BestMeal_Solution.go -f=".\menuFull.json" -v >result.json 2>out.log`
+`go run JeffR_CulinaryQuest_Solution.go -f=".\menuFull.json" -v >result.json 2>out.log`
 
 [TOC](#table-of-contents)
 
