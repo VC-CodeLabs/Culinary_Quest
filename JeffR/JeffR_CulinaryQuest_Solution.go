@@ -24,7 +24,7 @@ import (
 //	NOTE this can also be overridden with -f={menuJsonFileSpec}
 var menuInputFile string = "menu.json"
 
-// ditto for user constraints
+// ditto for user constraints; -u={userConstraintsFileSpec}
 var userConstraintsInputFile string = "user_constraints.json"
 
 // flag indicating whether to cleanse categories;
@@ -412,8 +412,8 @@ func findMostSatisfyingMeal(foods []MenuItem, budget int, calorieLimit int, alle
 	mainCourseIndexes := make([]int, 0)
 	dessertIndexes := make([]int, 0)
 
-	// detect duplicate names
-	knownFoodNames := make(map[string]int, 0)
+	// detect duplicate names- Best Meal only
+	// /* NO>>> */ knownFoodNames := make(map[string]int, 0)
 
 	rejectedCount := 0
 
@@ -423,28 +423,43 @@ func findMostSatisfyingMeal(foods []MenuItem, budget int, calorieLimit int, alle
 			log.Printf("Input foods[%d]: %+v\n", i, food)
 		}
 
-		if knownFoodNames[food.Name] > 0 {
-			return nil, fmt.Errorf("Duplicate food name=`%s` at foods[%d] and foods[%d]", food.Name, knownFoodNames[food.Name]-1, i)
-		}
+		// per the Culinary Quest readme, we're not concerned re duplicates-
+		// a) output includes food category, so no concern re duplicate names across categories
+		// b) "Each dish name within a category will be unique."
+		/*
+			if knownFoodNames[food.Name] > 0 {
+				return nil, fmt.Errorf("Duplicate food name=`%s` at foods[%d] and foods[%d]", food.Name, knownFoodNames[food.Name]-1, i)
+			}
 
-		knownFoodNames[food.Name] = i + 1
+			knownFoodNames[food.Name] = i + 1
+		*/
 
 		if len(allergies) > 0 {
-			slices.Sort(food.Ingredients)
-
 			rejected := false
-			for _, allergy := range allergies {
-				matchIndex, matchFound := slices.BinarySearchFunc(food.Ingredients, allergy, func(ingredient string, allergy string) int {
-					return strings.Compare(strings.ToLower(ingredient), strings.ToLower(allergy))
-				})
+			if len(food.Ingredients) > 0 {
+				slices.Sort(food.Ingredients)
 
-				if matchFound {
-					if VERBOSE {
-						log.Printf("Food `%s` contains allergen `%s`- rejected\n", food.Name, food.Ingredients[matchIndex])
+				for _, allergy := range allergies {
+					matchIndex, matchFound := slices.BinarySearchFunc(food.Ingredients, allergy, func(ingredient string, allergy string) int {
+						return strings.Compare(strings.ToLower(ingredient), strings.ToLower(allergy))
+					})
+
+					if matchFound {
+						if VERBOSE {
+							log.Printf("Food `%s` contains allergen `%s`- rejected\n", food.Name, food.Ingredients[matchIndex])
+						}
+						rejected = true
+						break
 					}
-					rejected = true
-					break
 				}
+
+			} else {
+
+				if VERBOSE {
+					log.Printf("User has allergies but food `%s` lists no ingredients- rejected for safety\n", food.Name)
+				}
+
+				rejected = true
 			}
 
 			if rejected {
@@ -478,19 +493,19 @@ func findMostSatisfyingMeal(foods []MenuItem, budget int, calorieLimit int, alle
 
 	// verify we have something in each category- note only the first gap found is reported
 	if len(appIndexes) == 0 {
-		return nil, errors.New("No apps in menu")
+		return nil, errors.New("No (compatible?) apps in menu")
 	}
 
 	if len(drinkIndexes) == 0 {
-		return nil, errors.New("No drinks in menu")
+		return nil, errors.New("No (compatible?) drinks in menu")
 	}
 
 	if len(mainCourseIndexes) == 0 {
-		return nil, errors.New("No mains in menu")
+		return nil, errors.New("No (compatible?) mains in menu")
 	}
 
 	if len(dessertIndexes) == 0 {
-		return nil, errors.New("No desserts in menu")
+		return nil, errors.New("No (compatible?) desserts in menu")
 	}
 
 	if VERBOSE {
@@ -510,9 +525,11 @@ func findMostSatisfyingMeal(foods []MenuItem, budget int, calorieLimit int, alle
 	// track the total cost of most satisfying meal so far;
 	// we factor this into the satisfaction, lower cost is more satisfying
 	lowestSatisfyingTotalCost := math.MaxInt
+
 	// track the total calories of the most satisfying meal so far;
 	// we factor this into the satisfaction, lower calories is more satisfying
-	lowestSatisfyingTotalCalories := math.MaxInt
+	// /* NO>>> lower calories != greater satisfaction */ lowestSatisfyingTotalCalories := math.MaxInt
+
 	// track the cheapest four-part meal regardless of budget;
 	// if no meal is available within budget,
 	// we'll let them know how many $s short they are
@@ -570,18 +587,22 @@ func findMostSatisfyingMeal(foods []MenuItem, budget int, calorieLimit int, alle
 							// highest satisfaction
 							if totalSatisfaction > maxTotalSatisfaction ||
 								// equal satisfaction but lower cost (which is also satisfying)
-								(totalSatisfaction >= maxTotalSatisfaction && totalCost < lowestSatisfyingTotalCost) ||
-								// equal satisfaction but lower calories (which is also satisfying)
-								(totalSatisfaction >= maxTotalSatisfaction && totalCalories < lowestSatisfyingTotalCalories) {
+								(totalSatisfaction >= maxTotalSatisfaction && totalCost < lowestSatisfyingTotalCost) { // ||
+								// NOTE per the Culinary Quest readme,
+								//  "If there is a tie in satisfaction, the cheaper combination should be chosen."
+								// i.e. lower calories does not result in greater satisfaction
+								// (I beg to differ, but thems the rules)
+								// /* NO>>> */ equal satisfaction but lower calories (which is also satisfying)
+								// /* NO>>> */ (totalSatisfaction >= maxTotalSatisfaction && totalCalories < lowestSatisfyingTotalCalories) {
 
 								// save off the candidate meal and stats
 								mostSatisfyingMeal = Meal{appIndex, drinkIndex, mainCourseIndex, dessertIndex, totalCost, totalSatisfaction, totalCalories}
 								maxTotalSatisfaction = totalSatisfaction
 								lowestSatisfyingTotalCost = totalCost
-								lowestSatisfyingTotalCalories = totalCalories
+								// /* NO>>> lower calories != greater satisfaction */ lowestSatisfyingTotalCalories = totalCalories
 								foundMostSatisfyingMeal = true
 
-								// since we found at least one candidate, we'll no longer be tracking minimum cost
+								// since we found at least one candidate, we'll no longer be tracking minimum cost or lowest calories
 								cheapestMealTotalCost = -1
 								lowestCalorieMeal = -1
 
@@ -653,7 +674,7 @@ func findMostSatisfyingMeal(foods []MenuItem, budget int, calorieLimit int, alle
 			return nil,
 				fmt.Errorf(""+
 					"Checked %d meal(s), none fit your budget- "+
-					"you need another %d buck(s) to dine here :/",
+					"you need another %d buck(s) to dine here, you poor bleepard :/",
 					mealCounter, cheapestMealTotalCost-budget)
 
 		} else {
@@ -664,8 +685,8 @@ func findMostSatisfyingMeal(foods []MenuItem, budget int, calorieLimit int, alle
 
 			return nil,
 				fmt.Errorf(""+
-					"Checked %d meal(s), none fit your calorie restrictions- "+
-					"you need another %d calorie(s) to dine here :/",
+					"Checked %d meal(s), none fit your calorie limit- "+
+					"you need another %d calorie(s) to dine here, you fat bleepard :/",
 					mealCounter, lowestCalorieMeal-calorieLimit)
 
 		}
