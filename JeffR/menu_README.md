@@ -3,13 +3,14 @@ use -f={menuJsonFileSpec} parameter to override the default menu.json e.g.
 
 | Test .json | Notes | Result |
 | ---   | ---   | ---    |
-| menu | a small example derived from Alek's README (subset of full) | Fried Calamari, Beer, Lasagna, Cheesecake, tC=21, tS=18 |
+| menu | the full example from Alek's README | Fried Calamari, Coffee, Salmon, Ice Cream, t$=21, tS=18, tCal=1005 |
+| menu_example | a small example derived from Alek's README (subset of full) | Fried Calamari, Beer, Lasagna, Cheesecake, tC=21, tS=18 |
 | menuBadCategory | category=Cheese | error="Unknown food category..." |
 | menuDuplicateFoodNames | "Chef Salad" x2 Appetizer & Main Course | error="Duplicate food name..." |
 | menuEmptyFile | no content, zero length | error="Bad menu json: unexpected end of input" |
 | menuEmptyJson | {} | error="No food in menu??" | 
 | menuEmptyJsonArray | [] | error="Bad menu ... cannot unmarshal" |
-| menuFull  | the full example from Alek's README | Bruschetta, Coffee, Steak, Tiramisu, tC=24, tS=22** |
+| menuFullBestMeal | the full example from Alek's BestMealREADME | Bruschetta, Coffee, Steak, Tiramisu, tC=24, tS=22** |
 | menuLooseCategory | case/whitespace within category is ignored | **==menuFull |
 | menuMalformed | [{]} (bad json) | error="Bad menu ... invalid character" |
 | menuMismatchedJson | valid json but doesn't match menu foods+budget structure | error="No food in menu??" |
@@ -24,4 +25,9 @@ use -f={menuJsonFileSpec} parameter to override the default menu.json e.g.
 | menuReversedJson | json fields are in reverse order | **==menuFull |
 | menuTooPoor1 | no meals fit budget; matches Alek's readme example | error="...you need another 35 buck(s)..." |
 | menuTooPoor2 | no meals fit budget | error="...you need another 1 buck(s)..." |
-| 
+| user_constraints | the full example from Alek's README- allergen=basil | varies |
+| user_constraints_empty | {} | error="You need a budget" |
+| user_constraints_example | the first example from Alek's README- allergen=flour | varies |
+| user_constraints_malformed | [{]} (bad json) | error="Bad user constraints ... invalid character" |
+| user_constraints_no_budget | missing budget field in json | error="You need a budget" (same when budget < 0) |
+| user_constraints_no_calories | missing calorieLimit field in json | error="No calorie limit specified" |

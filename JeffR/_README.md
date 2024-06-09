@@ -15,18 +15,21 @@ powershell: `$env:GOTMPDIR="$env:USERPROFILE\Projects\tmp"`
 
 **@Alek: for validating the solution, it is assumed you won't use any command-line parameters, or at most `-f={testCaseMenuJsonFilespec}`**
 
-to use a different file for input (such as the other .json test files provided), 
+to use a different menu file for input (such as the other menu*.json test files provided), 
 use the `-f={altMenuJsonFilespec}` parameter.
+
+to use a different user constraints file for input (such as the other user*.json test files provided),
+use the `-u={altUserConstraintsJsonFilespec}` parameter.
 
 to enable debug output, use `-v`.  even with this enabled, you can redirect the output to a file to capture only the json result.
 
 with the following command-line, an alternative menu file is used for input, verbose mode is enabled with output written to stderr, result.json will contain only the bestmeal or error json output.  
 
-`go run JeffR_CulinaryQuest_Solution.go -f=menuFull.json -v >result.json`  
+`go run JeffR_CulinaryQuest_Solution.go -f=menu_example.json -u=user_constraints_example -v >result.json`  
 
 to redirect the debug logging to a separate file, add `2>{logFilespec}`:  
 
-`go run JeffR_CulinaryQuest_Solution.go -f=menuFull.json -v >result.json 2>out.log`
+`go run JeffR_CulinaryQuest_Solution.go -f=menu_example.json -u=user_constraints_example -v >result.json 2>out.log`
 
 (works in bash/cmd)
 
@@ -36,7 +39,7 @@ to redirect the debug logging to a separate file, add `2>{logFilespec}`:
 
 powershell requires the -f to be prefixed with path and quoted; redirecting log output in powershell produces weird error in the log that can be ignored.
 
-`go run JeffR_CulinaryQuest_Solution.go -f=".\menuFull.json" -v >result.json 2>out.log`
+`go run JeffR_CulinaryQuest_Solution.go -f=".\menu_example.json" -u=user_constraints_example -v >result.json 2>out.log`
 
 [TOC](#table-of-contents)
 
