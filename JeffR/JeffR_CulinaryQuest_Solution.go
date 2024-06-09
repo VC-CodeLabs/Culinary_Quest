@@ -21,7 +21,10 @@ import (
 //
 //	define a variable here at the top for easy testing support-
 //	NOTE this can also be overridden with -f={menuJsonFileSpec}
-var inputFile string = "menu.json"
+var menuInputFile string = "menu.json"
+
+// ditto for user constraints
+var userConstraintsInputFile string = "user_constraints.json"
 
 // flag indicating whether to cleanse categories;
 //
@@ -40,7 +43,10 @@ func main() {
 	//
 
 	// allow the menu.json input filespec to be customized without changing code
-	fileParamPtr := flag.String("f", inputFile, "the input menu json filespec")
+	menuFileParamPtr := flag.String("f", menuInputFile, "the input menu json filespec")
+	// allow the user_constraints.json input filespec to be customized without changing code
+	userConstraintsFileParamPtr := flag.String("u", userConstraintsInputFile, "the input menu json filespec")
+
 	// cleanse parameter supports cleansing of category (ignore whitespace/case/pluralized)
 	cleanseParamPtr := flag.Bool("c", CLEANSE_CATEGORIES, "whether to cleanse input categories")
 	// verbose mode supports troubleshooting
@@ -64,16 +70,24 @@ func main() {
 		log.Printf("Cleansing categories: %v\n", CLEANSE_CATEGORIES)
 	}
 
-	if fileParamPtr != nil {
+	if menuFileParamPtr != nil {
 		// we had the -f={menuJsonFileSpec} parameter
-		inputFile = *fileParamPtr
+		menuInputFile = *menuFileParamPtr
 		if VERBOSE {
-			log.Printf("Reading menu json from `%s`\n", inputFile)
+			log.Printf("Reading menu json from `%s`\n", menuInputFile)
+		}
+	}
+
+	if userConstraintsFileParamPtr != nil {
+		// we had the -u={menuJsonFileSpec} parameter
+		userConstraintsInputFile = *userConstraintsFileParamPtr
+		if VERBOSE {
+			log.Printf("Reading user constraints json from `%s`\n", userConstraintsInputFile)
 		}
 	}
 
 	// find the best meal and report on it, else report an error
-	findAndEmitBestMeal(inputFile)
+	findAndEmitBestMeal(menuInputFile, userConstraintsInputFile)
 }
 
 // the global-ish flag for verbose mode-
@@ -81,8 +95,8 @@ func main() {
 var VERBOSE = false
 
 // find the best meal and report on it, else report an error
-func findAndEmitBestMeal(inputFile string) {
-	bestMeals, err := findBestMeal(inputFile)
+func findAndEmitBestMeal(menuInputFile string, userConstraintsInputFile string) {
+	bestMeals, err := findBestMeal(menuInputFile, userConstraintsInputFile)
 
 	if err != nil {
 		emitBestMealError(err)
@@ -187,6 +201,10 @@ type MenuItem struct {
 
 	// the category of this menu item e.g. "Main Course"
 	Category string `json:"category"`
+
+	Ingredients []string `json:"ingredients"`
+
+	Calories int `json:"calories"`
 }
 
 // define the structure of the menu input:
@@ -198,14 +216,24 @@ type Menu struct {
 	Foods []MenuItem `json:"foods"`
 
 	// the budget we have to spend on a four-part meal from this menu in dollars
+	// NOTE for Culinary quest, budget field moves to UserConstraints
+	// /* Best Meal: */ Budget int `json:"budget"`
+}
+
+// define the structure for user constraints
+type UserConstraints struct {
 	Budget int `json:"budget"`
+
+	Allergy []string `json:"allergy"`
+
+	CalorieLimit int `json:"calorieLimit"`
 }
 
 // find the best meal based on menu and budget in the spec'd inputFile .json;
 // we return an array for the BestMeal to allow for nil value when we have an error
-func findBestMeal(inputFile string) ([]BestMeal, error) {
+func findBestMeal(menuInputFile string, userConstraintsInputFile string) ([]BestMeal, error) {
 
-	menu, err := loadMenuAndBudget(inputFile)
+	menu, err := loadMenu(menuInputFile)
 
 	if err != nil {
 		return nil, err
@@ -216,11 +244,28 @@ func findBestMeal(inputFile string) ([]BestMeal, error) {
 		return nil, errors.New("No food in menu??")
 	}
 
-	if menu.Budget <= 0 {
+	/*
+		// Best Meal had budget in menu; Culinary Quest moves budget to User Constraints
+		if menu.Budget <= 0 {
+			return nil, errors.New("You need a budget")
+		}
+	*/
+
+	userConstraints, err := loadUserConstraints(userConstraintsInputFile)
+
+	if err != nil {
+		return nil, err
+	}
+
+	if userConstraints.Budget <= 0 {
 		return nil, errors.New("You need a budget")
 	}
 
-	meals, err := findMostSatisfyingMeal(menu.Foods, menu.Budget)
+	if userConstraints.CalorieLimit <= 0 {
+		return nil, errors.New("No calorie limit specified")
+	}
+
+	meals, err := findMostSatisfyingMeal(menu.Foods, userConstraints.Budget, userConstraints.CalorieLimit, userConstraints.Allergy)
 
 	if err != nil {
 		return nil, err
@@ -237,10 +282,11 @@ func findBestMeal(inputFile string) ([]BestMeal, error) {
 
 }
 
-func loadMenuAndBudget(inputFile string) (Menu, error) {
+// Best Meal: loadMenuAndBudget
+func loadMenu(menuInputFile string) (Menu, error) {
 
 	// (eventually) our menu: foods + budget
-	menu := Menu{make([]MenuItem, 0), 0}
+	menu := Menu{make([]MenuItem, 0)} /* Budget: */ // , 0 }
 
 	//// originally had the menu hard-wired into the code for a q&d test
 	/*
@@ -261,7 +307,7 @@ func loadMenuAndBudget(inputFile string) (Menu, error) {
 
 	// given the limit on input (200 items),
 	// should be no issue reading the entire text file into memory
-	menuBytes, err := os.ReadFile(inputFile)
+	menuBytes, err := os.ReadFile(menuInputFile)
 
 	if err != nil {
 		// bad file or access issue
@@ -280,6 +326,28 @@ func loadMenuAndBudget(inputFile string) (Menu, error) {
 
 	// menu loaded from json, return it w/ no error
 	return menu, err
+}
+
+func loadUserConstraints(userConstraintsInputFile string) (UserConstraints, error) {
+
+	userConstraints := UserConstraints{}
+
+	userConstraintsBytes, err := os.ReadFile(userConstraintsInputFile)
+
+	if err != nil {
+		// bad file or access issue
+		return userConstraints, err
+	}
+
+	err = json.Unmarshal(userConstraintsBytes, &userConstraints)
+
+	if err != nil {
+		// some issue with the json
+		err = errors.New("Bad user constraints json: " + err.Error())
+	}
+
+	return userConstraints, err
+
 }
 
 // the Meal struct is used to track a particular instance of a meal-
@@ -323,7 +391,7 @@ type Meal struct {
 // the meal with the lower total cost will be favored.
 //
 // we return an array for the meal so we can use nil when an error occurs
-func findMostSatisfyingMeal(foods []MenuItem, budget int) ([]Meal, error) {
+func findMostSatisfyingMeal(foods []MenuItem, budget int, calorieLimit int, allergies []string) ([]Meal, error) {
 
 	if /* foods == nil || */ len(foods) == 0 {
 		return nil, errors.New("Nothing in the menu??")
