@@ -1,7 +1,9 @@
 {
     "foods": [
         {"name": "Chef Salad", "cost": 4, "satisfaction": 4, "category": "Appetizer"},
-        {"name": "Chef Salad", "cost": 8, "satisfaction": 8, "category": "Main Course"}
+        {"name": "Coffee", "cost": 2, "satisfaction": 2, "category": "Drink"},
+        {"name": "Chef Salad", "cost": 8, "satisfaction": 8, "category": "Main Course"},
+        {"name": "Tiramisu", "cost": 6, "satisfaction": 6, "category": "Dessert"}
     ],
     "budget": 25
 }
