@@ -12,6 +12,7 @@ import (
 	"log"
 	"math"
 	"os"
+	"slices"
 	"strings"
 )
 
@@ -163,6 +164,8 @@ type BestMeal struct {
 
 	// the total satisfaction score for this meal
 	TotalSatisfaction int `json:"totalSatisfaction"`
+
+	Calories int `json:"calories"`
 }
 
 /*
@@ -276,7 +279,7 @@ func findBestMeal(menuInputFile string, userConstraintsInputFile string) ([]Best
 
 	bestMeal := BestMeal{
 		mealFoodNames(menu.Foods, mostSatisfyingMeal),
-		mostSatisfyingMeal.totalCost, mostSatisfyingMeal.totalSatisfaction}
+		mostSatisfyingMeal.totalCost, mostSatisfyingMeal.totalSatisfaction, mostSatisfyingMeal.totalCalories}
 
 	return []BestMeal{bestMeal}, nil
 
@@ -370,6 +373,8 @@ type Meal struct {
 	totalCost int
 	// sum of menu.foods[meal.app|drink|mainCourse|dessert indices].satisfaction
 	totalSatisfaction int
+
+	totalCalories int
 }
 
 // *the* solution algorithm- given a list of food items and budget in dollars,
@@ -410,6 +415,8 @@ func findMostSatisfyingMeal(foods []MenuItem, budget int, calorieLimit int, alle
 	// detect duplicate names
 	knownFoodNames := make(map[string]int, 0)
 
+	rejectedCount := 0
+
 	for i, food := range foods {
 
 		if VERBOSE {
@@ -421,6 +428,31 @@ func findMostSatisfyingMeal(foods []MenuItem, budget int, calorieLimit int, alle
 		}
 
 		knownFoodNames[food.Name] = i + 1
+
+		if len(allergies) > 0 {
+			slices.Sort(food.Ingredients)
+
+			rejected := false
+			for _, allergy := range allergies {
+				matchIndex, matchFound := slices.BinarySearchFunc(food.Ingredients, allergy, func(ingredient string, allergy string) int {
+					return strings.Compare(strings.ToLower(ingredient), strings.ToLower(allergy))
+				})
+
+				if matchFound {
+					if VERBOSE {
+						log.Printf("Food `%s` contains allergen `%s`- rejected\n", food.Name, food.Ingredients[matchIndex])
+					}
+					rejected = true
+					break
+				}
+			}
+
+			if rejected {
+				rejectedCount++
+				continue
+			}
+
+		}
 
 		switch cleanseCategory(food.Category) {
 		case cleanseCategory(APPETIZER_CATEGORY_NAME):
@@ -475,12 +507,21 @@ func findMostSatisfyingMeal(foods []MenuItem, budget int, calorieLimit int, alle
 	foundMostSatisfyingMeal := false
 	// track the maximum total satisfaction we've found so far
 	maxTotalSatisfaction := 0
-	// track the
+	// track the total cost of most satisfying meal so far;
+	// we factor this into the satisfaction, lower cost is more satisfying
 	lowestSatisfyingTotalCost := math.MaxInt
+	// track the total calories of the most satisfying meal so far;
+	// we factor this into the satisfaction, lower calories is more satisfying
+	lowestSatisfyingTotalCalories := math.MaxInt
 	// track the cheapest four-part meal regardless of budget;
 	// if no meal is available within budget,
 	// we'll let them know how many $s short they are
 	cheapestMealTotalCost := math.MaxInt
+
+	// track the lowest calorie meal (while respecting allergens);
+	// if no meal is available within calorie limit,
+	// we'll let them know how far off they are
+	lowestCalorieMeal := math.MaxInt
 
 	// track the actual most satisfying meal within budget found so far
 	// as we work our way thru the menu food items
@@ -501,57 +542,84 @@ func findMostSatisfyingMeal(foods []MenuItem, budget int, calorieLimit int, alle
 							mealCounter, appIndex, drinkIndex, mainCourseIndex, dessertIndex)
 					}
 
-					totalCost := 0 +
-						foods[appIndex].Cost +
-						foods[drinkIndex].Cost +
-						foods[mainCourseIndex].Cost +
-						foods[dessertIndex].Cost
+					totalCalories := 0 +
+						foods[appIndex].Calories +
+						foods[drinkIndex].Calories +
+						foods[mainCourseIndex].Calories +
+						foods[dessertIndex].Calories
 
-					if totalCost <= budget {
+					if totalCalories <= calorieLimit {
 
-						// this meal is within budget
-						// compute our total satisfaction for this meal
+						totalCost := 0 +
+							foods[appIndex].Cost +
+							foods[drinkIndex].Cost +
+							foods[mainCourseIndex].Cost +
+							foods[dessertIndex].Cost
 
-						totalSatisfaction := 0 +
-							foods[appIndex].Satisfaction +
-							foods[drinkIndex].Satisfaction +
-							foods[mainCourseIndex].Satisfaction +
-							foods[dessertIndex].Satisfaction
+						if totalCost <= budget {
 
-						// highest satisfaction
-						if totalSatisfaction > maxTotalSatisfaction ||
-							// equal satisfaction but lower cost (which is also satisfying)
-							(totalSatisfaction >= maxTotalSatisfaction && totalCost < lowestSatisfyingTotalCost) {
+							// this meal is within budget
+							// compute our total satisfaction for this meal
 
-							// save off the candidate meal and stats
-							mostSatisfyingMeal = Meal{appIndex, drinkIndex, mainCourseIndex, dessertIndex, totalCost, totalSatisfaction}
-							maxTotalSatisfaction = totalSatisfaction
-							lowestSatisfyingTotalCost = totalCost
-							foundMostSatisfyingMeal = true
+							totalSatisfaction := 0 +
+								foods[appIndex].Satisfaction +
+								foods[drinkIndex].Satisfaction +
+								foods[mainCourseIndex].Satisfaction +
+								foods[dessertIndex].Satisfaction
 
-							// since we found at least one candidate, we'll no longer be tracking minimum cost
-							cheapestMealTotalCost = -1
+							// highest satisfaction
+							if totalSatisfaction > maxTotalSatisfaction ||
+								// equal satisfaction but lower cost (which is also satisfying)
+								(totalSatisfaction >= maxTotalSatisfaction && totalCost < lowestSatisfyingTotalCost) ||
+								// equal satisfaction but lower calories (which is also satisfying)
+								(totalSatisfaction >= maxTotalSatisfaction && totalCalories < lowestSatisfyingTotalCalories) {
 
-							if VERBOSE {
-								log.Printf("** Most Satisfying + Lowest Cost (so far): %s totalCost=%d totalSatisfaction=%d\n", foodNames(foods, appIndex, drinkIndex, mainCourseIndex, dessertIndex), totalCost, totalSatisfaction)
+								// save off the candidate meal and stats
+								mostSatisfyingMeal = Meal{appIndex, drinkIndex, mainCourseIndex, dessertIndex, totalCost, totalSatisfaction, totalCalories}
+								maxTotalSatisfaction = totalSatisfaction
+								lowestSatisfyingTotalCost = totalCost
+								lowestSatisfyingTotalCalories = totalCalories
+								foundMostSatisfyingMeal = true
+
+								// since we found at least one candidate, we'll no longer be tracking minimum cost
+								cheapestMealTotalCost = -1
+								lowestCalorieMeal = -1
+
+								if VERBOSE {
+									log.Printf("** Most Satisfying + Lowest Cost & Calories (so far): %s totalCost=%d totalSatisfaction=%d totalCalories=%d\n", foodNames(foods, appIndex, drinkIndex, mainCourseIndex, dessertIndex), totalCost, totalSatisfaction, totalCalories)
+								}
+							} else {
+								if VERBOSE {
+									log.Printf("Less Satisfying: %s totalCost=%d totalSatisfaction=%d totalCalories=%d\n", foodNames(foods, appIndex, drinkIndex, mainCourseIndex, dessertIndex), totalCost, totalSatisfaction, totalCalories)
+								}
 							}
+
 						} else {
 							if VERBOSE {
-								log.Printf("Less Satisfying: %s totalCost=%d totalSatisfaction=%d\n", foodNames(foods, appIndex, drinkIndex, mainCourseIndex, dessertIndex), totalCost, totalSatisfaction)
+								log.Printf("Over budget: %s totalCost=%d\n", foodNames(foods, appIndex, drinkIndex, mainCourseIndex, dessertIndex), totalCost)
+							}
+						}
+
+						if !foundMostSatisfyingMeal {
+							if totalCost < cheapestMealTotalCost {
+								cheapestMealTotalCost = totalCost
+								if VERBOSE {
+									log.Printf("Cheapest meal cost: %d\n", cheapestMealTotalCost)
+								}
 							}
 						}
 
 					} else {
 						if VERBOSE {
-							log.Printf("Over budget: %s totalCost=%d\n", foodNames(foods, appIndex, drinkIndex, mainCourseIndex, dessertIndex), totalCost)
+							log.Printf("Over calories: %s totalCalories=%d\n", foodNames(foods, appIndex, drinkIndex, mainCourseIndex, dessertIndex), totalCalories)
 						}
 					}
 
 					if !foundMostSatisfyingMeal {
-						if totalCost < cheapestMealTotalCost {
-							cheapestMealTotalCost = totalCost
+						if totalCalories < lowestCalorieMeal {
+							lowestCalorieMeal = totalCalories
 							if VERBOSE {
-								log.Printf("Cheapest meal cost: %d\n", cheapestMealTotalCost)
+								log.Printf("Lowest calorie meal: %d\n", lowestCalorieMeal)
 							}
 						}
 					}
@@ -564,25 +632,43 @@ func findMostSatisfyingMeal(foods []MenuItem, budget int, calorieLimit int, alle
 
 	if foundMostSatisfyingMeal {
 		if VERBOSE {
-			log.Printf("**** Most Satisfying + Lowest Cost Meal: %s totalCost=%d totalSatisfaction=%d\n",
+			log.Printf("**** Final Most Satisfying + Lowest Cost & Calories Meal: %s totalCost=%d totalSatisfaction=%d totalCalories=%d\n",
 				foodNames(foods,
 					mostSatisfyingMeal.appIndex,
 					mostSatisfyingMeal.drinkIndex,
 					mostSatisfyingMeal.mainCourseIndex,
 					mostSatisfyingMeal.dessertIndex),
 				mostSatisfyingMeal.totalCost,
-				mostSatisfyingMeal.totalSatisfaction)
+				mostSatisfyingMeal.totalSatisfaction,
+				mostSatisfyingMeal.totalCalories)
 		}
 		return []Meal{mostSatisfyingMeal}, nil
 	} else {
-		if VERBOSE {
-			log.Printf("*** Budget=%d vs Cheapest Meal=%d\n", budget, cheapestMealTotalCost)
+		if cheapestMealTotalCost != math.MaxInt {
+
+			if VERBOSE {
+				log.Printf("*** Budget=%d vs Cheapest Meal=%d\n", budget, cheapestMealTotalCost)
+			}
+
+			return nil,
+				fmt.Errorf(""+
+					"Checked %d meal(s), none fit your budget- "+
+					"you need another %d buck(s) to dine here :/",
+					mealCounter, cheapestMealTotalCost-budget)
+
+		} else {
+
+			if VERBOSE {
+				log.Printf("*** CalorieLimit=%d vs Lowest Calorie Meal=%d\n", calorieLimit, lowestCalorieMeal)
+			}
+
+			return nil,
+				fmt.Errorf(""+
+					"Checked %d meal(s), none fit your calorie restrictions- "+
+					"you need another %d calorie(s) to dine here :/",
+					mealCounter, lowestCalorieMeal-calorieLimit)
+
 		}
-		return nil,
-			fmt.Errorf(""+
-				"Checked %d meal(s), none fit your budget- "+
-				"you need another %d buck(s) to dine here :/",
-				mealCounter, cheapestMealTotalCost-budget)
 	}
 }
 
