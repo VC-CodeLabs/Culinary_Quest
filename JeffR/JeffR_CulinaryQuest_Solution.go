@@ -154,10 +154,16 @@ func emitBestMeal(bestMeal BestMeal) {
 ////////////////////////////////////////////////////////////////////
 // define the output
 
+type SelectedFood struct {
+	Category string `json:"category"`
+
+	Name string `json:"name"`
+}
+
 // the final result: the most satisfying meal within our budget aka the best meal
 type BestMeal struct {
 	// the names of the foods selected, one from each category
-	SelectedFoods [MEAL_ITEMS]string `json:"selectedFoods"`
+	SelectedFoods [MEAL_ITEMS]SelectedFood `json:"selectedFoods"`
 
 	// the total cost of this meal in dollars
 	TotalCost int `json:"totalCost"`
@@ -278,7 +284,10 @@ func findBestMeal(menuInputFile string, userConstraintsInputFile string) ([]Best
 	mostSatisfyingMeal := meals[0]
 
 	bestMeal := BestMeal{
-		mealFoodNames(menu.Foods, mostSatisfyingMeal),
+		// Best meal output food names only
+		// mealFoodNames(menu.Foods, mostSatisfyingMeal),
+		// Culinary Quest includes food category + name in output
+		selectedFoods(menu.Foods, mostSatisfyingMeal),
 		mostSatisfyingMeal.totalCost, mostSatisfyingMeal.totalSatisfaction, mostSatisfyingMeal.totalCalories}
 
 	return []BestMeal{bestMeal}, nil
@@ -709,6 +718,15 @@ func mealFoodNames(foods []MenuItem, meal Meal) [MEAL_ITEMS]string {
 		meal.drinkIndex,
 		meal.mainCourseIndex,
 		meal.dessertIndex)
+}
+
+func selectedFoods(foods []MenuItem, meal Meal) [MEAL_ITEMS]SelectedFood {
+	return [MEAL_ITEMS]SelectedFood{
+		{foods[meal.appIndex].Category, foods[meal.appIndex].Name},
+		{foods[meal.drinkIndex].Category, foods[meal.drinkIndex].Name},
+		{foods[meal.mainCourseIndex].Category, foods[meal.mainCourseIndex].Name},
+		{foods[meal.dessertIndex].Category, foods[meal.dessertIndex].Name},
+	}
 }
 
 // convert the indexes for foods in a four-part meal to the food names
