@@ -1,0 +1,2507 @@
+{
+	"foods": [
+		{
+			"name": "Drink49",
+			"cost": 1,
+			"satisfaction": 23,
+			"category": "Drink",
+			"ingredients": [
+				"sugar",
+				"carbon dioxide",
+				"hops"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert14",
+			"cost": 1,
+			"satisfaction": 16,
+			"category": "Dessert",
+			"ingredients": [
+				"apples",
+				"butter",
+				"sugar"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course25",
+			"cost": 1,
+			"satisfaction": 25,
+			"category": "Main Course",
+			"ingredients": [
+				"pepper",
+				"soy sauce",
+				"salt",
+				"broccoli"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink42",
+			"cost": 1,
+			"satisfaction": 26,
+			"category": "Drink",
+			"ingredients": [
+				"water",
+				"barley"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer18",
+			"cost": 1,
+			"satisfaction": 10,
+			"category": "Appetizer",
+			"ingredients": [
+				"tomatoes",
+				"garlic",
+				"cream cheese",
+				"basil",
+				"spinach"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert41",
+			"cost": 1,
+			"satisfaction": 45,
+			"category": "Dessert",
+			"ingredients": [
+				"flour",
+				"cream cheese",
+				"apples",
+				"butter"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer35",
+			"cost": 1,
+			"satisfaction": 24,
+			"category": "Appetizer",
+			"ingredients": [
+				"tomatoes",
+				"spinach",
+				"bread",
+				"garlic",
+				"cream cheese"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer8",
+			"cost": 1,
+			"satisfaction": 45,
+			"category": "Appetizer",
+			"ingredients": [
+				"spinach",
+				"bread",
+				"tomatoes",
+				"garlic",
+				"cream cheese"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer46",
+			"cost": 1,
+			"satisfaction": 43,
+			"category": "Appetizer",
+			"ingredients": [
+				"tomatoes",
+				"spinach"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert43",
+			"cost": 1,
+			"satisfaction": 28,
+			"category": "Dessert",
+			"ingredients": [
+				"apples",
+				"butter",
+				"flour"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink25",
+			"cost": 1,
+			"satisfaction": 39,
+			"category": "Drink",
+			"ingredients": [
+				"sugar",
+				"barley"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink48",
+			"cost": 1,
+			"satisfaction": 13,
+			"category": "Drink",
+			"ingredients": [
+				"barley",
+				"sugar",
+				"hops"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink44",
+			"cost": 1,
+			"satisfaction": 41,
+			"category": "Drink",
+			"ingredients": [
+				"barley",
+				"water",
+				"sugar",
+				"hops"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert18",
+			"cost": 1,
+			"satisfaction": 24,
+			"category": "Dessert",
+			"ingredients": [
+				"apples",
+				"eggs",
+				"flour",
+				"crust"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer39",
+			"cost": 1,
+			"satisfaction": 19,
+			"category": "Appetizer",
+			"ingredients": [
+				"bread",
+				"cream cheese",
+				"garlic"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course37",
+			"cost": 1,
+			"satisfaction": 46,
+			"category": "Main Course",
+			"ingredients": [
+				"peppers",
+				"carrots",
+				"salt"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink10",
+			"cost": 1,
+			"satisfaction": 27,
+			"category": "Drink",
+			"ingredients": [
+				"water",
+				"sugar"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert13",
+			"cost": 1,
+			"satisfaction": 20,
+			"category": "Dessert",
+			"ingredients": [
+				"butter",
+				"apples",
+				"crust"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer21",
+			"cost": 1,
+			"satisfaction": 9,
+			"category": "Appetizer",
+			"ingredients": [
+				"garlic",
+				"tomatoes",
+				"basil",
+				"bread"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink47",
+			"cost": 1,
+			"satisfaction": 9,
+			"category": "Drink",
+			"ingredients": [
+				"sugar",
+				"water",
+				"barley"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert39",
+			"cost": 1,
+			"satisfaction": 13,
+			"category": "Dessert",
+			"ingredients": [
+				"butter",
+				"apples",
+				"cream cheese",
+				"eggs"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink14",
+			"cost": 1,
+			"satisfaction": 10,
+			"category": "Drink",
+			"ingredients": [
+				"sugar",
+				"barley",
+				"carbon dioxide",
+				"hops"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink1",
+			"cost": 1,
+			"satisfaction": 11,
+			"category": "Drink",
+			"ingredients": [
+				"hops",
+				"barley"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course34",
+			"cost": 1,
+			"satisfaction": 26,
+			"category": "Main Course",
+			"ingredients": [
+				"soy sauce",
+				"beef",
+				"salt",
+				"peppers",
+				"broccoli"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course1",
+			"cost": 1,
+			"satisfaction": 22,
+			"category": "Main Course",
+			"ingredients": [
+				"salt",
+				"broccoli",
+				"pepper",
+				"peppers",
+				"carrots",
+				"soy sauce"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert12",
+			"cost": 1,
+			"satisfaction": 4,
+			"category": "Dessert",
+			"ingredients": [
+				"cream cheese",
+				"eggs",
+				"sugar",
+				"flour"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink12",
+			"cost": 1,
+			"satisfaction": 44,
+			"category": "Drink",
+			"ingredients": [
+				"water",
+				"carbon dioxide",
+				"barley",
+				"sugar"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer32",
+			"cost": 1,
+			"satisfaction": 11,
+			"category": "Appetizer",
+			"ingredients": [
+				"tomatoes",
+				"spinach"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink15",
+			"cost": 1,
+			"satisfaction": 38,
+			"category": "Drink",
+			"ingredients": [
+				"water",
+				"sugar"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert36",
+			"cost": 1,
+			"satisfaction": 44,
+			"category": "Dessert",
+			"ingredients": [
+				"crust",
+				"eggs",
+				"apples",
+				"sugar",
+				"flour"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink13",
+			"cost": 1,
+			"satisfaction": 18,
+			"category": "Drink",
+			"ingredients": [
+				"water",
+				"barley"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert25",
+			"cost": 1,
+			"satisfaction": 48,
+			"category": "Dessert",
+			"ingredients": [
+				"cream cheese",
+				"eggs",
+				"flour"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink40",
+			"cost": 1,
+			"satisfaction": 36,
+			"category": "Drink",
+			"ingredients": [
+				"carbon dioxide",
+				"hops"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert48",
+			"cost": 1,
+			"satisfaction": 9,
+			"category": "Dessert",
+			"ingredients": [
+				"apples",
+				"cream cheese",
+				"crust",
+				"butter",
+				"flour"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course48",
+			"cost": 1,
+			"satisfaction": 3,
+			"category": "Main Course",
+			"ingredients": [
+				"beef",
+				"carrots"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert38",
+			"cost": 1,
+			"satisfaction": 12,
+			"category": "Dessert",
+			"ingredients": [
+				"crust",
+				"sugar",
+				"apples"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert19",
+			"cost": 1,
+			"satisfaction": 7,
+			"category": "Dessert",
+			"ingredients": [
+				"eggs",
+				"sugar",
+				"crust",
+				"butter"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course2",
+			"cost": 1,
+			"satisfaction": 36,
+			"category": "Main Course",
+			"ingredients": [
+				"salt",
+				"beef",
+				"carrots",
+				"pepper"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert31",
+			"cost": 1,
+			"satisfaction": 31,
+			"category": "Dessert",
+			"ingredients": [
+				"crust",
+				"butter",
+				"sugar"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer28",
+			"cost": 1,
+			"satisfaction": 16,
+			"category": "Appetizer",
+			"ingredients": [
+				"bread",
+				"basil",
+				"spinach",
+				"garlic",
+				"tomatoes"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course7",
+			"cost": 1,
+			"satisfaction": 12,
+			"category": "Main Course",
+			"ingredients": [
+				"salt",
+				"soy sauce",
+				"carrots",
+				"broccoli"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink19",
+			"cost": 1,
+			"satisfaction": 21,
+			"category": "Drink",
+			"ingredients": [
+				"carbon dioxide",
+				"water",
+				"barley",
+				"sugar"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course47",
+			"cost": 1,
+			"satisfaction": 39,
+			"category": "Main Course",
+			"ingredients": [
+				"soy sauce",
+				"carrots",
+				"pepper",
+				"salt"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink33",
+			"cost": 1,
+			"satisfaction": 48,
+			"category": "Drink",
+			"ingredients": [
+				"carbon dioxide",
+				"hops",
+				"barley"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course17",
+			"cost": 1,
+			"satisfaction": 24,
+			"category": "Main Course",
+			"ingredients": [
+				"beef",
+				"pepper"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course29",
+			"cost": 1,
+			"satisfaction": 38,
+			"category": "Main Course",
+			"ingredients": [
+				"pepper",
+				"beef",
+				"soy sauce",
+				"salt",
+				"peppers"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course10",
+			"cost": 1,
+			"satisfaction": 7,
+			"category": "Main Course",
+			"ingredients": [
+				"salt",
+				"carrots",
+				"broccoli",
+				"soy sauce"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course3",
+			"cost": 1,
+			"satisfaction": 19,
+			"category": "Main Course",
+			"ingredients": [
+				"carrots",
+				"peppers"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert29",
+			"cost": 1,
+			"satisfaction": 41,
+			"category": "Dessert",
+			"ingredients": [
+				"flour",
+				"apples",
+				"crust",
+				"butter",
+				"sugar"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer5",
+			"cost": 1,
+			"satisfaction": 48,
+			"category": "Appetizer",
+			"ingredients": [
+				"garlic",
+				"tomatoes",
+				"cream cheese",
+				"spinach",
+				"basil"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert50",
+			"cost": 1,
+			"satisfaction": 23,
+			"category": "Dessert",
+			"ingredients": [
+				"butter",
+				"eggs"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer20",
+			"cost": 1,
+			"satisfaction": 46,
+			"category": "Appetizer",
+			"ingredients": [
+				"spinach",
+				"garlic",
+				"basil"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink18",
+			"cost": 1,
+			"satisfaction": 12,
+			"category": "Drink",
+			"ingredients": [
+				"barley",
+				"water",
+				"carbon dioxide",
+				"sugar"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer50",
+			"cost": 1,
+			"satisfaction": 35,
+			"category": "Appetizer",
+			"ingredients": [
+				"tomatoes",
+				"garlic"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink8",
+			"cost": 1,
+			"satisfaction": 34,
+			"category": "Drink",
+			"ingredients": [
+				"water",
+				"barley",
+				"hops",
+				"carbon dioxide"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer40",
+			"cost": 1,
+			"satisfaction": 41,
+			"category": "Appetizer",
+			"ingredients": [
+				"spinach",
+				"bread",
+				"basil"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert22",
+			"cost": 1,
+			"satisfaction": 22,
+			"category": "Dessert",
+			"ingredients": [
+				"apples",
+				"butter",
+				"eggs"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink17",
+			"cost": 1,
+			"satisfaction": 45,
+			"category": "Drink",
+			"ingredients": [
+				"barley",
+				"sugar",
+				"hops",
+				"water"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink26",
+			"cost": 1,
+			"satisfaction": 33,
+			"category": "Drink",
+			"ingredients": [
+				"hops",
+				"water",
+				"sugar",
+				"barley"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course6",
+			"cost": 1,
+			"satisfaction": 9,
+			"category": "Main Course",
+			"ingredients": [
+				"peppers",
+				"soy sauce",
+				"carrots",
+				"beef",
+				"pepper",
+				"broccoli"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer14",
+			"cost": 1,
+			"satisfaction": 21,
+			"category": "Appetizer",
+			"ingredients": [
+				"tomatoes",
+				"garlic",
+				"basil",
+				"spinach",
+				"cream cheese"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink11",
+			"cost": 1,
+			"satisfaction": 47,
+			"category": "Drink",
+			"ingredients": [
+				"barley",
+				"carbon dioxide"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer45",
+			"cost": 1,
+			"satisfaction": 37,
+			"category": "Appetizer",
+			"ingredients": [
+				"tomatoes",
+				"basil"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert6",
+			"cost": 1,
+			"satisfaction": 1,
+			"category": "Dessert",
+			"ingredients": [
+				"apples",
+				"sugar",
+				"eggs",
+				"flour",
+				"cream cheese",
+				"crust"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course41",
+			"cost": 1,
+			"satisfaction": 2,
+			"category": "Main Course",
+			"ingredients": [
+				"soy sauce",
+				"peppers",
+				"broccoli",
+				"beef"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert23",
+			"cost": 1,
+			"satisfaction": 17,
+			"category": "Dessert",
+			"ingredients": [
+				"apples",
+				"flour",
+				"sugar",
+				"cream cheese"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert17",
+			"cost": 1,
+			"satisfaction": 14,
+			"category": "Dessert",
+			"ingredients": [
+				"apples",
+				"butter",
+				"sugar",
+				"crust",
+				"eggs"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer11",
+			"cost": 1,
+			"satisfaction": 13,
+			"category": "Appetizer",
+			"ingredients": [
+				"basil",
+				"cream cheese"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course11",
+			"cost": 1,
+			"satisfaction": 49,
+			"category": "Main Course",
+			"ingredients": [
+				"beef",
+				"soy sauce"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course31",
+			"cost": 1,
+			"satisfaction": 44,
+			"category": "Main Course",
+			"ingredients": [
+				"pepper",
+				"broccoli"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink21",
+			"cost": 1,
+			"satisfaction": 6,
+			"category": "Drink",
+			"ingredients": [
+				"carbon dioxide",
+				"hops"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert49",
+			"cost": 1,
+			"satisfaction": 15,
+			"category": "Dessert",
+			"ingredients": [
+				"apples",
+				"cream cheese",
+				"butter",
+				"crust",
+				"sugar",
+				"eggs"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink16",
+			"cost": 1,
+			"satisfaction": 30,
+			"category": "Drink",
+			"ingredients": [
+				"sugar",
+				"barley"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course23",
+			"cost": 1,
+			"satisfaction": 11,
+			"category": "Main Course",
+			"ingredients": [
+				"carrots",
+				"beef",
+				"salt"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert11",
+			"cost": 1,
+			"satisfaction": 36,
+			"category": "Dessert",
+			"ingredients": [
+				"cream cheese",
+				"crust",
+				"flour",
+				"eggs"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer6",
+			"cost": 1,
+			"satisfaction": 44,
+			"category": "Appetizer",
+			"ingredients": [
+				"tomatoes",
+				"garlic",
+				"spinach",
+				"bread",
+				"basil"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink34",
+			"cost": 1,
+			"satisfaction": 3,
+			"category": "Drink",
+			"ingredients": [
+				"hops",
+				"water",
+				"sugar",
+				"barley"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer19",
+			"cost": 1,
+			"satisfaction": 42,
+			"category": "Appetizer",
+			"ingredients": [
+				"spinach",
+				"bread",
+				"tomatoes",
+				"garlic"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert42",
+			"cost": 1,
+			"satisfaction": 6,
+			"category": "Dessert",
+			"ingredients": [
+				"flour",
+				"eggs",
+				"apples"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert20",
+			"cost": 1,
+			"satisfaction": 3,
+			"category": "Dessert",
+			"ingredients": [
+				"butter",
+				"cream cheese"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course26",
+			"cost": 1,
+			"satisfaction": 48,
+			"category": "Main Course",
+			"ingredients": [
+				"soy sauce",
+				"carrots",
+				"broccoli",
+				"salt"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course18",
+			"cost": 1,
+			"satisfaction": 27,
+			"category": "Main Course",
+			"ingredients": [
+				"broccoli",
+				"carrots",
+				"salt"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course33",
+			"cost": 1,
+			"satisfaction": 23,
+			"category": "Main Course",
+			"ingredients": [
+				"broccoli",
+				"carrots",
+				"soy sauce",
+				"salt",
+				"peppers",
+				"pepper"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer16",
+			"cost": 1,
+			"satisfaction": 7,
+			"category": "Appetizer",
+			"ingredients": [
+				"tomatoes",
+				"cream cheese",
+				"spinach",
+				"bread",
+				"basil"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert7",
+			"cost": 1,
+			"satisfaction": 26,
+			"category": "Dessert",
+			"ingredients": [
+				"crust",
+				"eggs",
+				"cream cheese"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer30",
+			"cost": 1,
+			"satisfaction": 31,
+			"category": "Appetizer",
+			"ingredients": [
+				"tomatoes",
+				"bread",
+				"garlic"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert30",
+			"cost": 1,
+			"satisfaction": 35,
+			"category": "Dessert",
+			"ingredients": [
+				"apples",
+				"butter",
+				"eggs"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course36",
+			"cost": 1,
+			"satisfaction": 6,
+			"category": "Main Course",
+			"ingredients": [
+				"peppers",
+				"broccoli",
+				"salt"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Ice Cream",
+			"cost": 25,
+			"satisfaction": 50,
+			"category": "Dessert",
+			"ingredients": [
+				"milk",
+				"sugar",
+				"cream"
+			],
+			"calories": 275
+		},
+		{
+			"name": "Appetizer25",
+			"cost": 1,
+			"satisfaction": 32,
+			"category": "Appetizer",
+			"ingredients": [
+				"cream cheese",
+				"bread",
+				"basil",
+				"tomatoes"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert16",
+			"cost": 1,
+			"satisfaction": 11,
+			"category": "Dessert",
+			"ingredients": [
+				"butter",
+				"eggs",
+				"sugar",
+				"crust",
+				"flour"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer27",
+			"cost": 1,
+			"satisfaction": 1,
+			"category": "Appetizer",
+			"ingredients": [
+				"spinach",
+				"garlic",
+				"tomatoes"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer38",
+			"cost": 1,
+			"satisfaction": 4,
+			"category": "Appetizer",
+			"ingredients": [
+				"spinach",
+				"cream cheese"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer4",
+			"cost": 1,
+			"satisfaction": 26,
+			"category": "Appetizer",
+			"ingredients": [
+				"garlic",
+				"spinach",
+				"cream cheese",
+				"tomatoes",
+				"bread"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course50",
+			"cost": 1,
+			"satisfaction": 5,
+			"category": "Main Course",
+			"ingredients": [
+				"beef",
+				"salt",
+				"soy sauce",
+				"pepper",
+				"peppers",
+				"carrots"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer24",
+			"cost": 1,
+			"satisfaction": 39,
+			"category": "Appetizer",
+			"ingredients": [
+				"cream cheese",
+				"garlic",
+				"spinach",
+				"basil"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course19",
+			"cost": 1,
+			"satisfaction": 28,
+			"category": "Main Course",
+			"ingredients": [
+				"salt",
+				"broccoli"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink32",
+			"cost": 1,
+			"satisfaction": 17,
+			"category": "Drink",
+			"ingredients": [
+				"hops",
+				"water",
+				"carbon dioxide"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink46",
+			"cost": 1,
+			"satisfaction": 24,
+			"category": "Drink",
+			"ingredients": [
+				"carbon dioxide",
+				"hops"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert46",
+			"cost": 1,
+			"satisfaction": 33,
+			"category": "Dessert",
+			"ingredients": [
+				"sugar",
+				"crust",
+				"cream cheese",
+				"apples",
+				"eggs",
+				"flour"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course8",
+			"cost": 1,
+			"satisfaction": 42,
+			"category": "Main Course",
+			"ingredients": [
+				"carrots",
+				"salt",
+				"beef",
+				"peppers"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer42",
+			"cost": 1,
+			"satisfaction": 15,
+			"category": "Appetizer",
+			"ingredients": [
+				"tomatoes",
+				"basil"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course5",
+			"cost": 1,
+			"satisfaction": 15,
+			"category": "Main Course",
+			"ingredients": [
+				"peppers",
+				"pepper"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer29",
+			"cost": 1,
+			"satisfaction": 2,
+			"category": "Appetizer",
+			"ingredients": [
+				"cream cheese",
+				"basil",
+				"tomatoes",
+				"garlic"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer3",
+			"cost": 1,
+			"satisfaction": 33,
+			"category": "Appetizer",
+			"ingredients": [
+				"tomatoes",
+				"cream cheese",
+				"spinach"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink30",
+			"cost": 1,
+			"satisfaction": 29,
+			"category": "Drink",
+			"ingredients": [
+				"hops",
+				"sugar",
+				"water"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer33",
+			"cost": 1,
+			"satisfaction": 30,
+			"category": "Appetizer",
+			"ingredients": [
+				"tomatoes",
+				"basil"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer49",
+			"cost": 1,
+			"satisfaction": 17,
+			"category": "Appetizer",
+			"ingredients": [
+				"garlic",
+				"basil",
+				"bread"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink36",
+			"cost": 1,
+			"satisfaction": 46,
+			"category": "Drink",
+			"ingredients": [
+				"hops",
+				"sugar",
+				"barley"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer31",
+			"cost": 1,
+			"satisfaction": 18,
+			"category": "Appetizer",
+			"ingredients": [
+				"basil",
+				"cream cheese"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink23",
+			"cost": 1,
+			"satisfaction": 40,
+			"category": "Drink",
+			"ingredients": [
+				"hops",
+				"water",
+				"sugar"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course20",
+			"cost": 1,
+			"satisfaction": 10,
+			"category": "Main Course",
+			"ingredients": [
+				"beef",
+				"broccoli",
+				"soy sauce",
+				"pepper"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink3",
+			"cost": 1,
+			"satisfaction": 43,
+			"category": "Drink",
+			"ingredients": [
+				"sugar",
+				"hops",
+				"barley"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer47",
+			"cost": 1,
+			"satisfaction": 25,
+			"category": "Appetizer",
+			"ingredients": [
+				"tomatoes",
+				"basil",
+				"garlic"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink6",
+			"cost": 1,
+			"satisfaction": 37,
+			"category": "Drink",
+			"ingredients": [
+				"barley",
+				"hops"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer36",
+			"cost": 1,
+			"satisfaction": 29,
+			"category": "Appetizer",
+			"ingredients": [
+				"bread",
+				"tomatoes",
+				"garlic"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course22",
+			"cost": 1,
+			"satisfaction": 14,
+			"category": "Main Course",
+			"ingredients": [
+				"broccoli",
+				"peppers"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer37",
+			"cost": 1,
+			"satisfaction": 5,
+			"category": "Appetizer",
+			"ingredients": [
+				"tomatoes",
+				"garlic",
+				"basil",
+				"cream cheese"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink35",
+			"cost": 1,
+			"satisfaction": 4,
+			"category": "Drink",
+			"ingredients": [
+				"sugar",
+				"water"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink7",
+			"cost": 1,
+			"satisfaction": 8,
+			"category": "Drink",
+			"ingredients": [
+				"water",
+				"barley",
+				"carbon dioxide",
+				"hops"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer15",
+			"cost": 1,
+			"satisfaction": 12,
+			"category": "Appetizer",
+			"ingredients": [
+				"tomatoes",
+				"spinach",
+				"bread",
+				"cream cheese"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert47",
+			"cost": 1,
+			"satisfaction": 49,
+			"category": "Dessert",
+			"ingredients": [
+				"apples",
+				"cream cheese"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert10",
+			"cost": 1,
+			"satisfaction": 29,
+			"category": "Dessert",
+			"ingredients": [
+				"sugar",
+				"eggs",
+				"cream cheese",
+				"butter",
+				"apples"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert26",
+			"cost": 1,
+			"satisfaction": 5,
+			"category": "Dessert",
+			"ingredients": [
+				"cream cheese",
+				"apples",
+				"flour"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course30",
+			"cost": 1,
+			"satisfaction": 29,
+			"category": "Main Course",
+			"ingredients": [
+				"salt",
+				"beef",
+				"pepper",
+				"peppers"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course38",
+			"cost": 1,
+			"satisfaction": 31,
+			"category": "Main Course",
+			"ingredients": [
+				"peppers",
+				"soy sauce",
+				"beef",
+				"pepper",
+				"salt"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink45",
+			"cost": 1,
+			"satisfaction": 31,
+			"category": "Drink",
+			"ingredients": [
+				"carbon dioxide",
+				"sugar",
+				"barley"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink28",
+			"cost": 1,
+			"satisfaction": 2,
+			"category": "Drink",
+			"ingredients": [
+				"barley",
+				"water",
+				"carbon dioxide",
+				"hops"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course49",
+			"cost": 1,
+			"satisfaction": 43,
+			"category": "Main Course",
+			"ingredients": [
+				"carrots",
+				"broccoli",
+				"soy sauce"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer22",
+			"cost": 1,
+			"satisfaction": 20,
+			"category": "Appetizer",
+			"ingredients": [
+				"basil",
+				"garlic"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert35",
+			"cost": 1,
+			"satisfaction": 39,
+			"category": "Dessert",
+			"ingredients": [
+				"butter",
+				"cream cheese",
+				"apples",
+				"crust",
+				"eggs"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert28",
+			"cost": 1,
+			"satisfaction": 21,
+			"category": "Dessert",
+			"ingredients": [
+				"eggs",
+				"flour",
+				"crust",
+				"cream cheese"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer2",
+			"cost": 1,
+			"satisfaction": 49,
+			"category": "Appetizer",
+			"ingredients": [
+				"cream cheese",
+				"bread"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink9",
+			"cost": 1,
+			"satisfaction": 16,
+			"category": "Drink",
+			"ingredients": [
+				"barley",
+				"water"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course15",
+			"cost": 1,
+			"satisfaction": 33,
+			"category": "Main Course",
+			"ingredients": [
+				"pepper",
+				"beef"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert8",
+			"cost": 1,
+			"satisfaction": 30,
+			"category": "Dessert",
+			"ingredients": [
+				"butter",
+				"sugar"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer43",
+			"cost": 1,
+			"satisfaction": 22,
+			"category": "Appetizer",
+			"ingredients": [
+				"bread",
+				"cream cheese",
+				"tomatoes",
+				"garlic",
+				"basil"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink4",
+			"cost": 1,
+			"satisfaction": 22,
+			"category": "Drink",
+			"ingredients": [
+				"barley",
+				"sugar"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course45",
+			"cost": 1,
+			"satisfaction": 18,
+			"category": "Main Course",
+			"ingredients": [
+				"salt",
+				"beef",
+				"peppers",
+				"broccoli",
+				"soy sauce"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert45",
+			"cost": 1,
+			"satisfaction": 37,
+			"category": "Dessert",
+			"ingredients": [
+				"sugar",
+				"apples",
+				"butter"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink22",
+			"cost": 1,
+			"satisfaction": 49,
+			"category": "Drink",
+			"ingredients": [
+				"barley",
+				"water",
+				"hops",
+				"sugar"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course14",
+			"cost": 1,
+			"satisfaction": 21,
+			"category": "Main Course",
+			"ingredients": [
+				"carrots",
+				"peppers",
+				"pepper",
+				"beef",
+				"salt"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer1",
+			"cost": 1,
+			"satisfaction": 40,
+			"category": "Appetizer",
+			"ingredients": [
+				"cream cheese",
+				"tomatoes",
+				"basil",
+				"spinach"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink29",
+			"cost": 1,
+			"satisfaction": 1,
+			"category": "Drink",
+			"ingredients": [
+				"carbon dioxide",
+				"barley"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink27",
+			"cost": 1,
+			"satisfaction": 5,
+			"category": "Drink",
+			"ingredients": [
+				"hops",
+				"barley",
+				"carbon dioxide",
+				"water"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course39",
+			"cost": 1,
+			"satisfaction": 34,
+			"category": "Main Course",
+			"ingredients": [
+				"soy sauce",
+				"salt",
+				"peppers",
+				"pepper",
+				"broccoli"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer48",
+			"cost": 1,
+			"satisfaction": 3,
+			"category": "Appetizer",
+			"ingredients": [
+				"tomatoes",
+				"garlic",
+				"basil",
+				"spinach"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink24",
+			"cost": 1,
+			"satisfaction": 28,
+			"category": "Drink",
+			"ingredients": [
+				"barley",
+				"water"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer13",
+			"cost": 1,
+			"satisfaction": 27,
+			"category": "Appetizer",
+			"ingredients": [
+				"garlic",
+				"cream cheese",
+				"basil",
+				"tomatoes",
+				"spinach"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course35",
+			"cost": 1,
+			"satisfaction": 41,
+			"category": "Main Course",
+			"ingredients": [
+				"beef",
+				"peppers"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer10",
+			"cost": 1,
+			"satisfaction": 6,
+			"category": "Appetizer",
+			"ingredients": [
+				"cream cheese",
+				"bread"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course4",
+			"cost": 1,
+			"satisfaction": 1,
+			"category": "Main Course",
+			"ingredients": [
+				"salt",
+				"pepper",
+				"peppers",
+				"broccoli"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer41",
+			"cost": 1,
+			"satisfaction": 34,
+			"category": "Appetizer",
+			"ingredients": [
+				"basil",
+				"spinach",
+				"cream cheese"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert34",
+			"cost": 1,
+			"satisfaction": 8,
+			"category": "Dessert",
+			"ingredients": [
+				"cream cheese",
+				"sugar",
+				"apples",
+				"butter",
+				"flour"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink50",
+			"cost": 1,
+			"satisfaction": 32,
+			"category": "Drink",
+			"ingredients": [
+				"barley",
+				"carbon dioxide",
+				"sugar",
+				"hops"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course43",
+			"cost": 1,
+			"satisfaction": 40,
+			"category": "Main Course",
+			"ingredients": [
+				"beef",
+				"carrots",
+				"broccoli",
+				"soy sauce"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course24",
+			"cost": 1,
+			"satisfaction": 32,
+			"category": "Main Course",
+			"ingredients": [
+				"soy sauce",
+				"pepper",
+				"carrots"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Salmon",
+			"cost": 25,
+			"satisfaction": 50,
+			"category": "Main Course",
+			"ingredients": [
+				"salmon",
+				"lemon",
+				"dill"
+			],
+			"calories": 275
+		},
+		{
+			"name": "Main Course40",
+			"cost": 1,
+			"satisfaction": 20,
+			"category": "Main Course",
+			"ingredients": [
+				"beef",
+				"broccoli",
+				"salt",
+				"soy sauce",
+				"peppers",
+				"pepper"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert40",
+			"cost": 1,
+			"satisfaction": 34,
+			"category": "Dessert",
+			"ingredients": [
+				"apples",
+				"eggs"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course28",
+			"cost": 1,
+			"satisfaction": 35,
+			"category": "Main Course",
+			"ingredients": [
+				"broccoli",
+				"beef",
+				"salt",
+				"carrots",
+				"peppers",
+				"pepper"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Fried Calamari ",
+			"cost": 25,
+			"satisfaction": 50,
+			"category": "Appetizer",
+			"ingredients": [
+				"calamari",
+				"flour",
+				"oil"
+			],
+			"calories": 275
+		},
+		{
+			"name": "Main Course42",
+			"cost": 1,
+			"satisfaction": 37,
+			"category": "Main Course",
+			"ingredients": [
+				"broccoli",
+				"salt",
+				"pepper",
+				"soy sauce",
+				"carrots"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert21",
+			"cost": 1,
+			"satisfaction": 25,
+			"category": "Dessert",
+			"ingredients": [
+				"eggs",
+				"crust",
+				"sugar",
+				"flour"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course13",
+			"cost": 1,
+			"satisfaction": 8,
+			"category": "Main Course",
+			"ingredients": [
+				"broccoli",
+				"salt"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer26",
+			"cost": 1,
+			"satisfaction": 38,
+			"category": "Appetizer",
+			"ingredients": [
+				"bread",
+				"garlic"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert1",
+			"cost": 1,
+			"satisfaction": 32,
+			"category": "Dessert",
+			"ingredients": [
+				"crust",
+				"flour",
+				"apples"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer23",
+			"cost": 1,
+			"satisfaction": 28,
+			"category": "Appetizer",
+			"ingredients": [
+				"spinach",
+				"garlic",
+				"basil"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course32",
+			"cost": 1,
+			"satisfaction": 17,
+			"category": "Main Course",
+			"ingredients": [
+				"pepper",
+				"carrots",
+				"peppers",
+				"salt",
+				"beef"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink41",
+			"cost": 1,
+			"satisfaction": 19,
+			"category": "Drink",
+			"ingredients": [
+				"carbon dioxide",
+				"water"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course46",
+			"cost": 1,
+			"satisfaction": 13,
+			"category": "Main Course",
+			"ingredients": [
+				"beef",
+				"pepper",
+				"salt"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course44",
+			"cost": 1,
+			"satisfaction": 16,
+			"category": "Main Course",
+			"ingredients": [
+				"peppers",
+				"broccoli",
+				"pepper"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink2",
+			"cost": 1,
+			"satisfaction": 15,
+			"category": "Drink",
+			"ingredients": [
+				"carbon dioxide",
+				"water"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert44",
+			"cost": 1,
+			"satisfaction": 19,
+			"category": "Dessert",
+			"ingredients": [
+				"eggs",
+				"flour",
+				"apples"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink20",
+			"cost": 1,
+			"satisfaction": 35,
+			"category": "Drink",
+			"ingredients": [
+				"barley",
+				"water",
+				"carbon dioxide"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert32",
+			"cost": 1,
+			"satisfaction": 38,
+			"category": "Dessert",
+			"ingredients": [
+				"crust",
+				"cream cheese",
+				"flour",
+				"butter",
+				"apples"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink38",
+			"cost": 1,
+			"satisfaction": 25,
+			"category": "Drink",
+			"ingredients": [
+				"water",
+				"carbon dioxide"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert4",
+			"cost": 1,
+			"satisfaction": 46,
+			"category": "Dessert",
+			"ingredients": [
+				"crust",
+				"sugar",
+				"eggs",
+				"apples",
+				"cream cheese"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course27",
+			"cost": 1,
+			"satisfaction": 45,
+			"category": "Main Course",
+			"ingredients": [
+				"beef",
+				"pepper",
+				"soy sauce",
+				"carrots"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer34",
+			"cost": 1,
+			"satisfaction": 47,
+			"category": "Appetizer",
+			"ingredients": [
+				"cream cheese",
+				"bread"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert33",
+			"cost": 1,
+			"satisfaction": 2,
+			"category": "Dessert",
+			"ingredients": [
+				"sugar",
+				"butter"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course21",
+			"cost": 1,
+			"satisfaction": 30,
+			"category": "Main Course",
+			"ingredients": [
+				"carrots",
+				"soy sauce",
+				"pepper",
+				"broccoli",
+				"peppers"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer9",
+			"cost": 1,
+			"satisfaction": 23,
+			"category": "Appetizer",
+			"ingredients": [
+				"bread",
+				"cream cheese"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink31",
+			"cost": 1,
+			"satisfaction": 7,
+			"category": "Drink",
+			"ingredients": [
+				"sugar",
+				"carbon dioxide",
+				"barley"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert27",
+			"cost": 1,
+			"satisfaction": 43,
+			"category": "Dessert",
+			"ingredients": [
+				"butter",
+				"sugar",
+				"flour",
+				"apples",
+				"eggs",
+				"crust"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer7",
+			"cost": 1,
+			"satisfaction": 14,
+			"category": "Appetizer",
+			"ingredients": [
+				"tomatoes",
+				"cream cheese",
+				"spinach",
+				"bread",
+				"garlic"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course12",
+			"cost": 1,
+			"satisfaction": 47,
+			"category": "Main Course",
+			"ingredients": [
+				"carrots",
+				"salt",
+				"soy sauce",
+				"peppers"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert24",
+			"cost": 1,
+			"satisfaction": 47,
+			"category": "Dessert",
+			"ingredients": [
+				"eggs",
+				"butter",
+				"cream cheese",
+				"sugar"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert5",
+			"cost": 1,
+			"satisfaction": 10,
+			"category": "Dessert",
+			"ingredients": [
+				"flour",
+				"sugar",
+				"eggs",
+				"apples",
+				"crust"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer17",
+			"cost": 1,
+			"satisfaction": 36,
+			"category": "Appetizer",
+			"ingredients": [
+				"garlic",
+				"cream cheese",
+				"bread",
+				"spinach",
+				"basil"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert3",
+			"cost": 1,
+			"satisfaction": 42,
+			"category": "Dessert",
+			"ingredients": [
+				"eggs",
+				"crust"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink37",
+			"cost": 1,
+			"satisfaction": 14,
+			"category": "Drink",
+			"ingredients": [
+				"water",
+				"carbon dioxide",
+				"sugar",
+				"hops"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Appetizer44",
+			"cost": 1,
+			"satisfaction": 8,
+			"category": "Appetizer",
+			"ingredients": [
+				"basil",
+				"spinach",
+				"tomatoes",
+				"garlic",
+				"cream cheese"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Coffee",
+			"cost": 25,
+			"satisfaction": 50,
+			"category": "Drink",
+			"ingredients": [
+				"coffee beans",
+				"water"
+			],
+			"calories": 275
+		},
+		{
+			"name": "Dessert9",
+			"cost": 1,
+			"satisfaction": 18,
+			"category": "Dessert",
+			"ingredients": [
+				"cream cheese",
+				"crust",
+				"sugar",
+				"apples",
+				"eggs",
+				"butter"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Main Course9",
+			"cost": 1,
+			"satisfaction": 4,
+			"category": "Main Course",
+			"ingredients": [
+				"soy sauce",
+				"beef",
+				"pepper",
+				"broccoli",
+				"carrots"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink43",
+			"cost": 1,
+			"satisfaction": 20,
+			"category": "Drink",
+			"ingredients": [
+				"sugar",
+				"carbon dioxide",
+				"barley",
+				"hops"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Drink39",
+			"cost": 1,
+			"satisfaction": 42,
+			"category": "Drink",
+			"ingredients": [
+				"hops",
+				"water",
+				"carbon dioxide",
+				"barley"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert2",
+			"cost": 1,
+			"satisfaction": 40,
+			"category": "Dessert",
+			"ingredients": [
+				"flour",
+				"apples",
+				"cream cheese",
+				"crust",
+				"sugar",
+				"butter"
+			],
+			"calories": 1
+		},
+		{
+			"name": "Dessert37",
+			"cost": 1,
+			"satisfaction": 27,
+			"category": "Dessert",
+			"ingredients": [
+				"sugar",
+				"apples",
+				"crust"
+			],
+			"calories": 1
+		}
+	],
+	"budget": 200
+}
