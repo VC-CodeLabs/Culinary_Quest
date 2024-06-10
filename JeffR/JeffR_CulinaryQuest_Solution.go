@@ -1,4 +1,4 @@
-// the primary algorithm is in the findMostSatisfayingMeal function-
+// the primary algorithm is in the findMostSatisfyingMeal function-
 // see the godoc on and within that function for details
 package main
 
@@ -394,14 +394,18 @@ type Meal struct {
 // find the most satisfying aka best meal
 //
 //   - break down the foods by category
+//     -- filter by allergens in ingredients
+//     -- check for unknown categories
 //   - validate each category has at least one food
 //   - for each combination of foods, one from each category, aka a meal:
-//   - compute the total cost
-//   - if total cost fits our budget:
-//   - compute the total satisfaction
-//   - if total satisfaction is greater than prior most-satisfying max,
-//   - *OR* if total satisfaction equals and total cost is lower than prior most-satisfying meal,
-//   - save the meal as most-satisfying so far
+//     -- compute the total calories
+//     -- if total calories fits out limit:
+//     -- compute the total cost
+//     -- if total cost fits our budget:
+//     -- compute the total satisfaction
+//     -- if total satisfaction is greater than prior most-satisfying max,
+//     *OR* if total satisfaction equals and total cost is lower than prior most-satisfying meal,
+//     -- save the meal as most-satisfying so far
 //
 // as noted in the solution-specific readme,
 // I factored cost into the equation-
@@ -447,6 +451,7 @@ func findMostSatisfyingMeal(foods []MenuItem, budget int, calorieLimit int, alle
 			knownFoodNames[food.Name] = i + 1
 		*/
 
+		// check for allergens
 		if len(allergies) > 0 {
 			rejected := false
 			if len(food.Ingredients) > 0 {
@@ -693,9 +698,9 @@ func findMostSatisfyingMeal(foods []MenuItem, budget int, calorieLimit int, alle
 
 			return nil,
 				fmt.Errorf(""+
-					"Checked %d meal(s), none fit your budget- "+
+					"Checked %d meal(s) excluding %d allergen-containg foods, none fit your budget- "+
 					"you need another %d buck(s) to dine here, you poor bleepard :/",
-					mealCounter, cheapestMealTotalCost-budget)
+					mealCounter, rejectedCount, cheapestMealTotalCost-budget)
 
 		} else {
 
@@ -705,9 +710,9 @@ func findMostSatisfyingMeal(foods []MenuItem, budget int, calorieLimit int, alle
 
 			return nil,
 				fmt.Errorf(""+
-					"Checked %d meal(s), none fit your calorie limit- "+
+					"Checked %d meal(s) excluding %d allergen-containg foods, none fit your calorie limit- "+
 					"you need another %d calorie(s) to dine here, you fat bleepard :/",
-					mealCounter, lowestCalorieMeal-calorieLimit)
+					mealCounter, rejectedCount, lowestCalorieMeal-calorieLimit)
 
 		}
 	}
