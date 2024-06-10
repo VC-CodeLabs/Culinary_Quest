@@ -1,0 +1,67 @@
+{
+    "foods" : [
+        {
+        "name" : "Food You are Allergic to",
+        "cost" : 6,
+        "satisfaction" : 1000,
+        "category" : "Appetizer",
+        "ingredients" : ["calamari", "flour", "oil"],
+        "calories" : 300
+       },
+        {
+        "name" : "Food That is too Expensive",
+        "cost" : 6000000,
+        "satisfaction" : 1000,
+        "category" : "Appetizer",
+        "ingredients" : ["calamari", "oil"],
+        "calories" : 300
+       },
+        {
+        "name" : "Expensive Appetizer",
+        "cost" : 6,
+        "satisfaction" : 5,
+        "category" : "Appetizer",
+        "ingredients" : ["calamari", "oil"],
+        "calories" : 300
+       },
+        {
+        "name" : "Drink",
+        "cost" : 6,
+        "satisfaction" : 5,
+        "category" : "Drink",
+        "ingredients" : ["calamari", "oil"],
+        "calories" : 300
+       },
+        {
+        "name" : "Dessert",
+        "cost" : 6,
+        "satisfaction" : 5,
+        "category" : "Dessert",
+        "ingredients" : ["calamari", "oil"],
+        "calories" : 300
+       },
+        {
+        "name" : "Main Course",
+        "cost" : 6,
+        "satisfaction" : 5,
+        "category" : "Main Course",
+        "ingredients" : ["calamari", "oil"],
+        "calories" : 300
+       },
+       {
+        "name" : "Cheap Appetizer",
+        "cost" : 1,
+        "satisfaction" : 5,
+        "category" : "Appetizer",
+        "ingredients" : ["calamari", "oil"],
+        "calories" : 300
+       }
+    ]
+}
+
+
+
+
+
+
+

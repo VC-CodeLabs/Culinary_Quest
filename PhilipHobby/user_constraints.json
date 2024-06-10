@@ -1,0 +1,5 @@
+{
+    "budget" : 1000,
+    "allergy" : ["flour"],
+    "calorieLimit" : 60000
+}

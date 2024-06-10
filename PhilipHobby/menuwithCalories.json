@@ -1,0 +1,20 @@
+{
+  "foods": [
+    {
+      "name": "Fried Calamari",
+      "cost": 6,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": ["calamari", "flour", "oil"],
+      "calories": 300
+    },
+    {
+      "name": "Bruschetta",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": ["bread", "tomatoes", "garlic"],
+      "calories": 150
+    }
+  ]
+}
