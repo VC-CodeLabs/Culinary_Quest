@@ -44,6 +44,10 @@ powershell requires the -f to be prefixed with path and quoted; redirecting log 
 [TOC](#table-of-contents)
 
 # Implementation notes
+The checks for allergens in food ingredients are not case-sensitive.
+
+The check for high calories takes precedence over high cost, the same is true when reporting no qualifying meals found (only calories are ref'd even if budget also doesn't fit.)
+
 I had originally intended to march thru the inputs to assemble all possible meals with total cost and satisfaction for each, then sort the list, then find what's within budget... then I realized I only needed to track the most satisfying meal
 
 checking for equal-satisfaction-but-lower-cost meals is included in the algorithm- IMO, spending less money is more satisfying
