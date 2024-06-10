@@ -1,0 +1,901 @@
+{
+"foods": [
+    {
+      "name": "Fried Calamari",
+      "cost": 6,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": ["calamari", "flour", "oil"],
+      "calories": 300
+    },
+    {
+      "name": "Bruschetta",
+      "cost": 5,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": ["bread", "tomatoes", "basil", "olive oil"],
+      "calories": 200
+    },
+    {
+      "name": "Mozzarella Sticks",
+      "cost": 7,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": ["mozzarella cheese", "breadcrumbs", "oil"],
+      "calories": 350
+    },
+    {
+      "name": "Stuffed Mushrooms",
+      "cost": 6,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": ["mushrooms", "cream cheese", "breadcrumbs"],
+      "calories": 250
+    },
+    {
+      "name": "Spring Rolls",
+      "cost": 6,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": ["rice paper", "vegetables", "shrimp"],
+      "calories": 150
+    },
+    {
+      "name": "Chicken Wings",
+      "cost": 8,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": ["chicken wings", "hot sauce", "butter"],
+      "calories": 400
+    },
+    {
+      "name": "Nachos",
+      "cost": 7,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": ["tortilla chips", "cheese", "jalapenos", "salsa"],
+      "calories": 500
+    },
+    {
+      "name": "Deviled Eggs",
+      "cost": 5,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": ["eggs", "mayonnaise", "mustard"],
+      "calories": 200
+    },
+    {
+      "name": "Guacamole",
+      "cost": 6,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": ["avocados", "lime", "onions", "tomatoes"],
+      "calories": 250
+    },
+    {
+      "name": "Hummus",
+      "cost": 5,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": ["chickpeas", "tahini", "lemon juice", "garlic"],
+      "calories": 150
+    },
+    {
+      "name": "Spinach Artichoke Dip",
+      "cost": 7,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": ["spinach", "artichokes", "cream cheese", "parmesan cheese"],
+      "calories": 350
+    },
+    {
+      "name": "Cheese Plate",
+      "cost": 9,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": ["various cheeses", "crackers", "fruits"],
+      "calories": 400
+    },
+    {
+      "name": "Meatballs",
+      "cost": 8,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": ["ground beef", "breadcrumbs", "parmesan cheese", "tomato sauce"],
+      "calories": 300
+    },
+    {
+      "name": "Quesadilla",
+      "cost": 7,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": ["tortilla", "cheese", "chicken"],
+      "calories": 400
+    },
+    {
+      "name": "Potato Skins",
+      "cost": 6,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": ["potatoes", "cheese", "bacon"],
+      "calories": 300
+    },
+    {
+      "name": "Crab Cakes",
+      "cost": 10,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": ["crab meat", "breadcrumbs", "mayonnaise", "mustard"],
+      "calories": 350
+    },
+    {
+      "name": "Buffalo Cauliflower",
+      "cost": 7,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": ["cauliflower", "hot sauce", "breadcrumbs"],
+      "calories": 250
+    },
+    {
+      "name": "Garlic Bread",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": ["bread", "garlic", "butter"],
+      "calories": 200
+    },
+    {
+      "name": "Caprese Salad",
+      "cost": 6,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": ["tomatoes", "mozzarella", "basil", "olive oil"],
+      "calories": 250
+    },
+    {
+      "name": "Shrimp Cocktail",
+      "cost": 9,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": ["shrimp", "cocktail sauce"],
+      "calories": 200
+    },
+    {
+      "name": "Falafel",
+      "cost": 6,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": ["chickpeas", "herbs", "spices"],
+      "calories": 300
+    },
+    {
+      "name": "Samosas",
+      "cost": 5,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": ["potatoes", "peas", "spices", "flour"],
+      "calories": 300
+    },
+    {
+      "name": "Mini Quiches",
+      "cost": 8,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": ["eggs", "cheese", "cream", "pastry"],
+      "calories": 300
+    },
+    {
+      "name": "Tzatziki with Pita",
+      "cost": 5,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": ["yogurt", "cucumber", "garlic", "pita bread"],
+      "calories": 200
+    },
+    {
+      "name": "Baba Ganoush",
+      "cost": 5,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": ["eggplant", "tahini", "lemon juice", "garlic"],
+      "calories": 150
+    },
+    {
+      "name": "Edamame",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": ["edamame", "salt"],
+      "calories": 150
+    },
+    {
+      "name": "Tempura",
+      "cost": 8,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": ["shrimp", "vegetables", "tempura batter"],
+      "calories": 350
+    },
+    {
+      "name": "Pigs in a Blanket",
+      "cost": 6,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": ["sausage", "pastry dough"],
+      "calories": 300
+    },
+    {
+      "name": "Prosciutto-Wrapped Melon",
+      "cost": 7,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": ["prosciutto", "melon"],
+      "calories": 200
+    },
+    {
+      "name": "Ceviche",
+      "cost": 10,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": ["fish", "lime juice", "onions", "cilantro"],
+      "calories": 250
+    },
+    {
+      "name": "Panzanella",
+      "cost": 6,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": ["bread", "tomatoes", "cucumber", "olive oil"],
+      "calories": 300
+    },
+    {
+      "name": "Baked Brie",
+      "cost": 9,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": ["brie cheese", "puff pastry", "jam"],
+      "calories": 400
+    },
+    {
+      "name": "Mango Smoothie",
+      "cost": 6,
+      "satisfaction": 4,
+      "category": "Drink",
+      "ingredients": ["mango", "yogurt", "honey"],
+      "calories": 200
+    },
+    {
+      "name": "Lemonade",
+      "cost": 3,
+      "satisfaction": 4,
+      "category": "Drink",
+      "ingredients": ["lemons", "sugar", "water"],
+      "calories": 120
+    },
+    {
+      "name": "Chocolate Milkshake",
+      "cost": 5,
+      "satisfaction": 5,
+      "category": "Drink",
+      "ingredients": ["milk", "chocolate syrup", "ice cream"],
+      "calories": 600
+    },
+    {
+      "name": "Iced Coffee",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Drink",
+      "ingredients": ["coffee", "milk", "ice"],
+      "calories": 150
+    },
+    {
+      "name": "Green Tea",
+      "cost": 3,
+      "satisfaction": 4,
+      "category": "Drink",
+      "ingredients": ["green tea leaves", "water"],
+      "calories": 0
+    },
+    {
+      "name": "Orange Juice",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Drink",
+      "ingredients": ["oranges"],
+      "calories": 110
+    },
+    {
+      "name": "Strawberry Smoothie",
+      "cost": 6,
+      "satisfaction": 5,
+      "category": "Drink",
+      "ingredients": ["strawberries", "yogurt", "honey"],
+      "calories": 200
+    },
+    {
+      "name": "Hot Chocolate",
+      "cost": 4,
+      "satisfaction": 5,
+      "category": "Drink",
+      "ingredients": ["milk", "chocolate syrup"],
+      "calories": 250
+    },
+    {
+      "name": "Latte",
+      "cost": 5,
+      "satisfaction": 4,
+      "category": "Drink",
+      "ingredients": ["espresso", "milk"],
+      "calories": 150
+    },
+    {
+      "name": "Cappuccino",
+      "cost": 5,
+      "satisfaction": 4,
+      "category": "Drink",
+      "ingredients": ["espresso", "milk", "foam"],
+      "calories": 120
+    },
+    {
+      "name": "Mojito",
+      "cost": 8,
+      "satisfaction": 5,
+      "category": "Drink",
+      "ingredients": ["rum", "mint", "sugar", "lime", "soda water"],
+      "calories": 200
+    },
+    {
+      "name": "Pina Colada",
+      "cost": 9,
+      "satisfaction": 5,
+      "category": "Drink",
+      "ingredients": ["rum", "coconut cream", "pineapple juice"],
+      "calories": 300
+    },
+    {
+      "name": "Margarita",
+      "cost": 8,
+      "satisfaction": 5,
+      "category": "Drink",
+      "ingredients": ["tequila", "lime juice", "triple sec"],
+      "calories": 250
+    },
+    {
+      "name": "Bloody Mary",
+      "cost": 8,
+      "satisfaction": 4,
+      "category": "Drink",
+      "ingredients": ["vodka", "tomato juice", "lemon juice", "worcestershire sauce", "hot sauce"],
+      "calories": 150
+    },
+    {
+      "name": "Smoothie Bowl",
+      "cost": 7,
+      "satisfaction": 5,
+      "category": "Drink",
+      "ingredients": ["mixed berries", "yogurt", "granola"],
+      "calories": 300
+    },
+    {
+      "name": "Green Smoothie",
+      "cost": 6,
+      "satisfaction": 4,
+      "category": "Drink",
+      "ingredients": ["spinach", "banana", "apple", "water"],
+      "calories": 180
+    },
+    {
+      "name": "Iced Tea",
+      "cost": 3,
+      "satisfaction": 4,
+      "category": "Drink",
+      "ingredients": ["tea", "ice", "lemon"],
+      "calories": 80
+    },
+    {
+      "name": "Protein Shake",
+      "cost": 7,
+      "satisfaction": 4,
+      "category": "Drink",
+      "ingredients": ["protein powder", "milk", "banana"],
+      "calories": 250
+    },
+    {
+      "name": "Chai Latte",
+      "cost": 5,
+      "satisfaction": 4,
+      "category": "Drink",
+      "ingredients": ["chai tea", "milk", "honey"],
+      "calories": 150
+    },
+    {
+      "name": "Espresso",
+      "cost": 3,
+      "satisfaction": 5,
+      "category": "Drink",
+      "ingredients": ["espresso beans", "water"],
+      "calories": 0
+    },
+    {
+      "name": "Apple Cider",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Drink",
+      "ingredients": ["apples", "cinnamon", "sugar"],
+      "calories": 120
+    },
+    {
+      "name": "Milk",
+      "cost": 2,
+      "satisfaction": 4,
+      "category": "Drink",
+      "ingredients": ["milk"],
+      "calories": 100
+    },
+    {
+      "name": "Tomato Juice",
+      "cost": 3,
+      "satisfaction": 4,
+      "category": "Drink",
+      "ingredients": ["tomatoes"],
+      "calories": 50
+    },
+    {
+      "name": "Coconut Water",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Drink",
+      "ingredients": ["coconut water"],
+      "calories": 45
+    },
+    {
+      "name": "Berry Smoothie",
+      "cost": 6,
+      "satisfaction": 5,
+      "category": "Drink",
+      "ingredients": ["mixed berries", "yogurt", "honey"],
+      "calories": 180
+    },
+    {
+      "name": "Root Beer Float",
+      "cost": 5,
+      "satisfaction": 5,
+      "category": "Drink",
+      "ingredients": ["root beer", "vanilla ice cream"],
+      "calories": 300
+    },
+    {
+      "name": "Herbal Tea",
+      "cost": 3,
+      "satisfaction": 4,
+      "category": "Drink",
+      "ingredients": ["herbal tea leaves", "water"],
+      "calories": 0
+    },
+    {
+      "name": "Carrot Juice",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Drink",
+      "ingredients": ["carrots"],
+      "calories": 80
+    },
+    {
+      "name": "Pumpkin Spice Latte",
+      "cost": 5,
+      "satisfaction": 5,
+      "category": "Drink",
+      "ingredients": ["espresso", "milk", "pumpkin spice syrup"],
+      "calories": 200
+    },
+    {
+      "name": "Peppermint Mocha",
+      "cost": 5,
+      "satisfaction": 5,
+      "category": "Drink",
+      "ingredients": ["espresso", "milk", "peppermint syrup", "chocolate syrup"],
+      "calories": 300
+    },
+    {
+      "name": "Matcha Latte",
+      "cost": 5,
+      "satisfaction": 4,
+      "category": "Drink",
+      "ingredients": ["matcha powder", "milk", "honey"],
+      "calories": 150
+    },
+    {
+      "name": "Vanilla Milkshake",
+      "cost": 5,
+      "satisfaction": 5,
+      "category": "Drink",
+      "ingredients": ["milk", "vanilla ice cream"],
+      "calories": 600
+    },
+    {
+      "name": "Ginger Tea",
+      "cost": 3,
+      "satisfaction": 4,
+      "category": "Drink",
+      "ingredients": ["ginger root", "water", "honey"],
+      "calories": 20
+    },
+    {
+      "name": "Limeade",
+      "cost": 3,
+      "satisfaction": 4,
+      "category": "Drink",
+      "ingredients": ["limes", "sugar", "water"],
+      "calories": 120
+    },
+    {
+      "name": "Peach Smoothie",
+      "cost": 6,
+      "satisfaction": 5,
+      "category": "Drink",
+      "ingredients": ["peaches", "yogurt", "honey"],
+      "calories": 200
+    },
+  {
+    "name": "Grilled Salmon",
+    "cost": 15,
+    "satisfaction": 5,
+    "category": "Main Course",
+    "ingredients": ["salmon", "lemon", "olive oil", "herbs"],
+    "calories": 400
+  },
+  {
+    "name": "Spaghetti Carbonara",
+    "cost": 12,
+    "satisfaction": 5,
+    "category": "Main Course",
+    "ingredients": ["spaghetti", "eggs", "parmesan cheese", "bacon"],
+    "calories": 700
+  },
+  {
+    "name": "Beef Stroganoff",
+    "cost": 14,
+    "satisfaction": 5,
+    "category": "Main Course",
+    "ingredients": ["beef", "mushrooms", "onions", "sour cream"],
+    "calories": 600
+  },
+  {
+    "name": "Chicken Alfredo",
+    "cost": 13,
+    "satisfaction": 5,
+    "category": "Main Course",
+    "ingredients": ["chicken", "fettuccine", "cream", "parmesan cheese"],
+    "calories": 800
+  },
+  {
+    "name": "Vegetable Stir Fry",
+    "cost": 10,
+    "satisfaction": 4,
+    "category": "Main Course",
+    "ingredients": ["mixed vegetables", "soy sauce", "ginger", "garlic"],
+    "calories": 350
+  },
+  {
+    "name": "Beef Tacos",
+    "cost": 12,
+    "satisfaction": 5,
+    "category": "Main Course",
+    "ingredients": ["beef", "taco shells", "lettuce", "cheese"],
+    "calories": 500
+  },
+  {
+    "name": "Margherita Pizza",
+    "cost": 11,
+    "satisfaction": 5,
+    "category": "Main Course",
+    "ingredients": ["pizza dough", "tomato sauce", "mozzarella cheese", "basil"],
+    "calories": 600
+  },
+  {
+    "name": "Pad Thai",
+    "cost": 12,
+    "satisfaction": 5,
+    "category": "Main Course",
+    "ingredients": ["rice noodles", "shrimp", "peanuts", "bean sprouts"],
+    "calories": 700
+  },
+  {
+    "name": "Chicken Curry",
+    "cost": 13,
+    "satisfaction": 5,
+    "category": "Main Course",
+    "ingredients": ["chicken", "coconut milk", "curry paste", "vegetables"],
+    "calories": 600
+  },
+  {
+    "name": "Ratatouille",
+    "cost": 11,
+    "satisfaction": 4,
+    "category": "Main Course",
+    "ingredients": ["eggplant", "zucchini", "tomatoes", "bell peppers"],
+    "calories": 400
+  },
+  {
+    "name": "Lamb Chops",
+    "cost": 18,
+    "satisfaction": 5,
+    "category": "Main Course",
+    "ingredients": ["lamb chops", "rosemary", "garlic", "olive oil"],
+    "calories": 500
+  },
+  {
+    "name": "Seafood Paella",
+    "cost": 17,
+    "satisfaction": 5,
+    "category": "Main Course",
+    "ingredients": ["rice", "shrimp", "mussels", "saffron"],
+    "calories": 700
+  },
+  {
+    "name": "Eggplant Parmesan",
+    "cost": 12,
+    "satisfaction": 5,
+    "category": "Main Course",
+    "ingredients": ["eggplant", "tomato sauce", "mozzarella cheese", "parmesan cheese"],
+    "calories": 500
+  },
+  {
+    "name": "BBQ Ribs",
+    "cost": 15,
+    "satisfaction": 5,
+    "category": "Main Course",
+    "ingredients": ["pork ribs", "bbq sauce"],
+    "calories": 800
+  },
+  {
+    "name": "Stuffed Bell Peppers",
+    "cost": 12,
+    "satisfaction": 4,
+    "category": "Main Course",
+    "ingredients": ["bell peppers", "ground beef", "rice", "tomato sauce"],
+    "calories": 400
+  },
+  {
+    "name": "Beef Bourguignon",
+    "cost": 16,
+    "satisfaction": 5,
+    "category": "Main Course",
+    "ingredients": ["beef", "red wine", "mushrooms", "onions"],
+    "calories": 600
+  },
+  {
+    "name": "Moussaka",
+    "cost": 14,
+    "satisfaction": 5,
+    "category": "Main Course",
+    "ingredients": ["eggplant", "ground beef", "béchamel sauce"],
+    "calories": 700
+  },
+  {
+    "name": "Fish and Chips",
+    "cost": 13,
+    "satisfaction": 5,
+    "category": "Main Course",
+    "ingredients": ["fish", "potatoes", "batter"],
+    "calories": 800
+  },
+  {
+    "name": "Vegetarian Lasagna",
+    "cost": 12,
+    "satisfaction": 5,
+    "category": "Main Course",
+    "ingredients": ["lasagna noodles", "ricotta cheese", "spinach", "tomato sauce"],
+    "calories": 600
+  },
+  {
+    "name": "Chocolate Cake",
+    "cost": 6,
+    "satisfaction": 5,
+    "category": "Dessert",
+    "ingredients": ["flour", "cocoa powder", "sugar", "eggs", "butter"],
+    "calories": 400
+  },
+  {
+    "name": "Cheesecake",
+    "cost": 7,
+    "satisfaction": 5,
+    "category": "Dessert",
+    "ingredients": ["cream cheese", "sugar", "eggs", "graham crackers"],
+    "calories": 500
+  },
+  {
+    "name": "Tiramisu",
+    "cost": 8,
+    "satisfaction": 5,
+    "category": "Dessert",
+    "ingredients": ["mascarpone cheese", "ladyfingers", "coffee", "cocoa powder"],
+    "calories": 450
+  },
+  {
+    "name": "Apple Pie",
+    "cost": 5,
+    "satisfaction": 5,
+    "category": "Dessert",
+    "ingredients": ["apples", "flour", "sugar", "butter", "cinnamon"],
+    "calories": 350
+  },
+  {
+    "name": "Brownies",
+    "cost": 4,
+    "satisfaction": 5,
+    "category": "Dessert",
+    "ingredients": ["chocolate", "flour", "sugar", "eggs", "butter"],
+    "calories": 300
+  },
+  {
+    "name": "Ice Cream Sundae",
+    "cost": 6,
+    "satisfaction": 5,
+    "category": "Dessert",
+    "ingredients": ["ice cream", "chocolate syrup", "whipped cream", "cherries"],
+    "calories": 450
+  },
+  {
+    "name": "Panna Cotta",
+    "cost": 5,
+    "satisfaction": 5,
+    "category": "Dessert",
+    "ingredients": ["cream", "sugar", "gelatin", "vanilla"],
+    "calories": 300
+  },
+  {
+    "name": "Creme Brulee",
+    "cost": 7,
+    "satisfaction": 5,
+    "category": "Dessert",
+    "ingredients": ["cream", "sugar", "eggs", "vanilla"],
+    "calories": 400
+  },
+  {
+    "name": "Lemon Tart",
+    "cost": 6,
+    "satisfaction": 5,
+    "category": "Dessert",
+    "ingredients": ["lemons", "flour", "sugar", "eggs", "butter"],
+    "calories": 350
+  },
+  {
+    "name": "Carrot Cake",
+    "cost": 6,
+    "satisfaction": 5,
+    "category": "Dessert",
+    "ingredients": ["carrots", "flour", "sugar", "eggs", "cream cheese"],
+    "calories": 400
+  },
+  {
+    "name": "Macarons",
+    "cost": 8,
+    "satisfaction": 5,
+    "category": "Dessert",
+    "ingredients": ["almond flour", "sugar", "eggs", "butter"],
+    "calories": 200
+  },
+  {
+    "name": "Pavlova",
+    "cost": 7,
+    "satisfaction": 5,
+    "category": "Dessert",
+    "ingredients": ["egg whites", "sugar", "cream", "berries"],
+    "calories": 250
+  },
+  {
+    "name": "Baklava",
+    "cost": 6,
+    "satisfaction": 5,
+    "category": "Dessert",
+    "ingredients": ["phyllo dough", "nuts", "honey"],
+    "calories": 300
+  },
+  {
+    "name": "Molten Lava Cake",
+    "cost": 7,
+    "satisfaction": 5,
+    "category": "Dessert",
+    "ingredients": ["chocolate", "flour", "sugar", "eggs", "butter"],
+    "calories": 450
+  },
+  {
+    "name": "Eclairs",
+    "cost": 6,
+    "satisfaction": 5,
+    "category": "Dessert",
+    "ingredients": ["choux pastry", "chocolate", "cream"],
+    "calories": 350
+  },
+  {
+    "name": "Raspberry Sorbet",
+    "cost": 5,
+    "satisfaction": 5,
+    "category": "Dessert",
+    "ingredients": ["raspberries", "sugar", "lemon juice"],
+    "calories": 200
+  },
+  {
+    "name": "Cannoli",
+    "cost": 6,
+    "satisfaction": 5,
+    "category": "Dessert",
+    "ingredients": ["ricotta cheese", "sugar", "flour", "chocolate chips"],
+    "calories": 300
+  },
+  {
+    "name": "Strawberry Shortcake",
+    "cost": 5,
+    "satisfaction": 5,
+    "category": "Dessert",
+    "ingredients": ["strawberries", "flour", "sugar", "cream"],
+    "calories": 350
+  },
+  {
+    "name": "Tart Tatin",
+    "cost": 6,
+    "satisfaction": 5,
+    "category": "Dessert",
+    "ingredients": ["apples", "sugar", "butter", "pastry"],
+    "calories": 400
+  },
+  {
+    "name": "Chocolate Mousse",
+    "cost": 5,
+    "satisfaction": 5,
+    "category": "Dessert",
+    "ingredients": ["chocolate", "cream", "sugar", "eggs"],
+    "calories": 300
+  },
+  {
+    "name": "Peach Cobbler",
+    "cost": 5,
+    "satisfaction": 5,
+    "category": "Dessert",
+    "ingredients": ["peaches", "flour", "sugar", "butter"],
+    "calories": 350
+  },
+  {
+    "name": "Banana Split",
+    "cost": 6,
+    "satisfaction": 5,
+    "category": "Dessert",
+    "ingredients": ["bananas", "ice cream", "chocolate syrup", "whipped cream"],
+    "calories": 450
+  },
+  {
+    "name": "Rice Pudding",
+    "cost": 4,
+    "satisfaction": 5,
+    "category": "Dessert",
+    "ingredients": ["rice", "milk", "sugar", "cinnamon"],
+    "calories": 300
+  },
+  {
+    "name": "Pecan Pie",
+    "cost": 6,
+    "satisfaction": 5,
+    "category": "Dessert",
+    "ingredients": ["pecans", "sugar", "flour", "butter"],
+    "calories": 400
+  },
+  {
+    "name": "Black Forest Cake",
+    "cost": 7,
+    "satisfaction": 5,
+    "category": "Dessert",
+    "ingredients": ["chocolate", "cherries", "whipped cream", "flour"],
+    "calories": 450
+  },
+  {
+    "name": "Chicken Cacciatore",
+    "cost": 14,
+    "satisfaction": 5,
+    "category": "Main Course",
+    "ingredients": ["chicken", "tomatoes", "bell peppers", "onions"],
+    "calories": 500
+  }
+
+]
+  }
