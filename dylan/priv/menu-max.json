@@ -1,0 +1,1952 @@
+{
+  "foods": [
+    {
+      "name": "Fried Calamari",
+      "cost": 6,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": [
+        "calamari",
+        "flour",
+        "oil"
+      ],
+      "calories": 300
+    },
+    {
+      "name": "Spinach Dip",
+      "cost": 5,
+      "satisfaction": 3,
+      "category": "Appetizer",
+      "ingredients": [
+        "spinach",
+        "cream cheese",
+        "garlic"
+      ],
+      "calories": 250
+    },
+    {
+      "name": "Bruschetta",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": [
+        "bread",
+        "tomatoes",
+        "basil"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Fried Calamari",
+      "cost": 6,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": [
+        "calamari",
+        "flour",
+        "oil"
+      ],
+      "calories": 300
+    },
+    {
+      "name": "Spinach Dip",
+      "cost": 5,
+      "satisfaction": 3,
+      "category": "Appetizer",
+      "ingredients": [
+        "spinach",
+        "cream cheese",
+        "garlic"
+      ],
+      "calories": 250
+    },
+    {
+      "name": "Bruschetta",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": [
+        "bread",
+        "tomatoes",
+        "basil"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Fried Calamari",
+      "cost": 6,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": [
+        "calamari",
+        "flour",
+        "oil"
+      ],
+      "calories": 300
+    },
+    {
+      "name": "Spinach Dip",
+      "cost": 5,
+      "satisfaction": 3,
+      "category": "Appetizer",
+      "ingredients": [
+        "spinach",
+        "cream cheese",
+        "garlic"
+      ],
+      "calories": 250
+    },
+    {
+      "name": "Bruschetta",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": [
+        "bread",
+        "tomatoes",
+        "basil"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Bruschetta",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": [
+        "bread",
+        "tomatoes",
+        "basil"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Fried Calamari",
+      "cost": 6,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": [
+        "calamari",
+        "flour",
+        "oil"
+      ],
+      "calories": 300
+    },
+    {
+      "name": "Spinach Dip",
+      "cost": 5,
+      "satisfaction": 3,
+      "category": "Appetizer",
+      "ingredients": [
+        "spinach",
+        "cream cheese",
+        "garlic"
+      ],
+      "calories": 250
+    },
+    {
+      "name": "Bruschetta",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": [
+        "bread",
+        "tomatoes",
+        "basil"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Fried Calamari",
+      "cost": 6,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": [
+        "calamari",
+        "flour",
+        "oil"
+      ],
+      "calories": 300
+    },
+    {
+      "name": "Spinach Dip",
+      "cost": 5,
+      "satisfaction": 3,
+      "category": "Appetizer",
+      "ingredients": [
+        "spinach",
+        "cream cheese",
+        "garlic"
+      ],
+      "calories": 250
+    },
+    {
+      "name": "Bruschetta",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": [
+        "bread",
+        "tomatoes",
+        "basil"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Fried Calamari",
+      "cost": 6,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": [
+        "calamari",
+        "flour",
+        "oil"
+      ],
+      "calories": 300
+    },
+    {
+      "name": "Spinach Dip",
+      "cost": 5,
+      "satisfaction": 3,
+      "category": "Appetizer",
+      "ingredients": [
+        "spinach",
+        "cream cheese",
+        "garlic"
+      ],
+      "calories": 250
+    },
+    {
+      "name": "Bruschetta",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": [
+        "bread",
+        "tomatoes",
+        "basil"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Bruschetta",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": [
+        "bread",
+        "tomatoes",
+        "basil"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Fried Calamari",
+      "cost": 6,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": [
+        "calamari",
+        "flour",
+        "oil"
+      ],
+      "calories": 300
+    },
+    {
+      "name": "Spinach Dip",
+      "cost": 5,
+      "satisfaction": 3,
+      "category": "Appetizer",
+      "ingredients": [
+        "spinach",
+        "cream cheese",
+        "garlic"
+      ],
+      "calories": 250
+    },
+    {
+      "name": "Bruschetta",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": [
+        "bread",
+        "tomatoes",
+        "basil"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Fried Calamari",
+      "cost": 6,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": [
+        "calamari",
+        "flour",
+        "oil"
+      ],
+      "calories": 300
+    },
+    {
+      "name": "Spinach Dip",
+      "cost": 5,
+      "satisfaction": 3,
+      "category": "Appetizer",
+      "ingredients": [
+        "spinach",
+        "cream cheese",
+        "garlic"
+      ],
+      "calories": 250
+    },
+    {
+      "name": "Bruschetta",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": [
+        "bread",
+        "tomatoes",
+        "basil"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Fried Calamari",
+      "cost": 6,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": [
+        "calamari",
+        "flour",
+        "oil"
+      ],
+      "calories": 300
+    },
+    {
+      "name": "Spinach Dip",
+      "cost": 5,
+      "satisfaction": 3,
+      "category": "Appetizer",
+      "ingredients": [
+        "spinach",
+        "cream cheese",
+        "garlic"
+      ],
+      "calories": 250
+    },
+    {
+      "name": "Bruschetta",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": [
+        "bread",
+        "tomatoes",
+        "basil"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Bruschetta",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": [
+        "bread",
+        "tomatoes",
+        "basil"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Fried Calamari",
+      "cost": 6,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": [
+        "calamari",
+        "flour",
+        "oil"
+      ],
+      "calories": 300
+    },
+    {
+      "name": "Spinach Dip",
+      "cost": 5,
+      "satisfaction": 3,
+      "category": "Appetizer",
+      "ingredients": [
+        "spinach",
+        "cream cheese",
+        "garlic"
+      ],
+      "calories": 250
+    },
+    {
+      "name": "Bruschetta",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": [
+        "bread",
+        "tomatoes",
+        "basil"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Fried Calamari",
+      "cost": 6,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": [
+        "calamari",
+        "flour",
+        "oil"
+      ],
+      "calories": 300
+    },
+    {
+      "name": "Spinach Dip",
+      "cost": 5,
+      "satisfaction": 3,
+      "category": "Appetizer",
+      "ingredients": [
+        "spinach",
+        "cream cheese",
+        "garlic"
+      ],
+      "calories": 250
+    },
+    {
+      "name": "Bruschetta",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": [
+        "bread",
+        "tomatoes",
+        "basil"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Fried Calamari",
+      "cost": 6,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": [
+        "calamari",
+        "flour",
+        "oil"
+      ],
+      "calories": 300
+    },
+    {
+      "name": "Spinach Dip",
+      "cost": 5,
+      "satisfaction": 3,
+      "category": "Appetizer",
+      "ingredients": [
+        "spinach",
+        "cream cheese",
+        "garlic"
+      ],
+      "calories": 250
+    },
+    {
+      "name": "Bruschetta",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": [
+        "bread",
+        "tomatoes",
+        "basil"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Bruschetta",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": [
+        "bread",
+        "tomatoes",
+        "basil"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Soda",
+      "cost": 1,
+      "satisfaction": 1,
+      "category": "Drink",
+      "ingredients": [
+        "water",
+        "sugar",
+        "carbon dioxide"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Coffee",
+      "cost": 2,
+      "satisfaction": 2,
+      "category": "Drink",
+      "ingredients": [
+        "coffee beans",
+        "water"
+      ],
+      "calories": 5
+    },
+    {
+      "name": "Beer",
+      "cost": 3,
+      "satisfaction": 2,
+      "category": "Drink",
+      "ingredients": [
+        "barley",
+        "hops",
+        "water"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Soda",
+      "cost": 1,
+      "satisfaction": 1,
+      "category": "Drink",
+      "ingredients": [
+        "water",
+        "sugar",
+        "carbon dioxide"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Coffee",
+      "cost": 2,
+      "satisfaction": 2,
+      "category": "Drink",
+      "ingredients": [
+        "coffee beans",
+        "water"
+      ],
+      "calories": 5
+    },
+    {
+      "name": "Beer",
+      "cost": 3,
+      "satisfaction": 2,
+      "category": "Drink",
+      "ingredients": [
+        "barley",
+        "hops",
+        "water"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Soda",
+      "cost": 1,
+      "satisfaction": 1,
+      "category": "Drink",
+      "ingredients": [
+        "water",
+        "sugar",
+        "carbon dioxide"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Coffee",
+      "cost": 2,
+      "satisfaction": 2,
+      "category": "Drink",
+      "ingredients": [
+        "coffee beans",
+        "water"
+      ],
+      "calories": 5
+    },
+    {
+      "name": "Beer",
+      "cost": 3,
+      "satisfaction": 2,
+      "category": "Drink",
+      "ingredients": [
+        "barley",
+        "hops",
+        "water"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Beer",
+      "cost": 3,
+      "satisfaction": 2,
+      "category": "Drink",
+      "ingredients": [
+        "barley",
+        "hops",
+        "water"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Soda",
+      "cost": 1,
+      "satisfaction": 1,
+      "category": "Drink",
+      "ingredients": [
+        "water",
+        "sugar",
+        "carbon dioxide"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Coffee",
+      "cost": 2,
+      "satisfaction": 2,
+      "category": "Drink",
+      "ingredients": [
+        "coffee beans",
+        "water"
+      ],
+      "calories": 5
+    },
+    {
+      "name": "Beer",
+      "cost": 3,
+      "satisfaction": 2,
+      "category": "Drink",
+      "ingredients": [
+        "barley",
+        "hops",
+        "water"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Soda",
+      "cost": 1,
+      "satisfaction": 1,
+      "category": "Drink",
+      "ingredients": [
+        "water",
+        "sugar",
+        "carbon dioxide"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Coffee",
+      "cost": 2,
+      "satisfaction": 2,
+      "category": "Drink",
+      "ingredients": [
+        "coffee beans",
+        "water"
+      ],
+      "calories": 5
+    },
+    {
+      "name": "Beer",
+      "cost": 3,
+      "satisfaction": 2,
+      "category": "Drink",
+      "ingredients": [
+        "barley",
+        "hops",
+        "water"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Soda",
+      "cost": 1,
+      "satisfaction": 1,
+      "category": "Drink",
+      "ingredients": [
+        "water",
+        "sugar",
+        "carbon dioxide"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Coffee",
+      "cost": 2,
+      "satisfaction": 2,
+      "category": "Drink",
+      "ingredients": [
+        "coffee beans",
+        "water"
+      ],
+      "calories": 5
+    },
+    {
+      "name": "Beer",
+      "cost": 3,
+      "satisfaction": 2,
+      "category": "Drink",
+      "ingredients": [
+        "barley",
+        "hops",
+        "water"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Beer",
+      "cost": 3,
+      "satisfaction": 2,
+      "category": "Drink",
+      "ingredients": [
+        "barley",
+        "hops",
+        "water"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Soda",
+      "cost": 1,
+      "satisfaction": 1,
+      "category": "Drink",
+      "ingredients": [
+        "water",
+        "sugar",
+        "carbon dioxide"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Coffee",
+      "cost": 2,
+      "satisfaction": 2,
+      "category": "Drink",
+      "ingredients": [
+        "coffee beans",
+        "water"
+      ],
+      "calories": 5
+    },
+    {
+      "name": "Beer",
+      "cost": 3,
+      "satisfaction": 2,
+      "category": "Drink",
+      "ingredients": [
+        "barley",
+        "hops",
+        "water"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Soda",
+      "cost": 1,
+      "satisfaction": 1,
+      "category": "Drink",
+      "ingredients": [
+        "water",
+        "sugar",
+        "carbon dioxide"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Coffee",
+      "cost": 2,
+      "satisfaction": 2,
+      "category": "Drink",
+      "ingredients": [
+        "coffee beans",
+        "water"
+      ],
+      "calories": 5
+    },
+    {
+      "name": "Beer",
+      "cost": 3,
+      "satisfaction": 2,
+      "category": "Drink",
+      "ingredients": [
+        "barley",
+        "hops",
+        "water"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Soda",
+      "cost": 1,
+      "satisfaction": 1,
+      "category": "Drink",
+      "ingredients": [
+        "water",
+        "sugar",
+        "carbon dioxide"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Coffee",
+      "cost": 2,
+      "satisfaction": 2,
+      "category": "Drink",
+      "ingredients": [
+        "coffee beans",
+        "water"
+      ],
+      "calories": 5
+    },
+    {
+      "name": "Beer",
+      "cost": 3,
+      "satisfaction": 2,
+      "category": "Drink",
+      "ingredients": [
+        "barley",
+        "hops",
+        "water"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Beer",
+      "cost": 3,
+      "satisfaction": 2,
+      "category": "Drink",
+      "ingredients": [
+        "barley",
+        "hops",
+        "water"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Soda",
+      "cost": 1,
+      "satisfaction": 1,
+      "category": "Drink",
+      "ingredients": [
+        "water",
+        "sugar",
+        "carbon dioxide"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Coffee",
+      "cost": 2,
+      "satisfaction": 2,
+      "category": "Drink",
+      "ingredients": [
+        "coffee beans",
+        "water"
+      ],
+      "calories": 5
+    },
+    {
+      "name": "Beer",
+      "cost": 3,
+      "satisfaction": 2,
+      "category": "Drink",
+      "ingredients": [
+        "barley",
+        "hops",
+        "water"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Soda",
+      "cost": 1,
+      "satisfaction": 1,
+      "category": "Drink",
+      "ingredients": [
+        "water",
+        "sugar",
+        "carbon dioxide"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Coffee",
+      "cost": 2,
+      "satisfaction": 2,
+      "category": "Drink",
+      "ingredients": [
+        "coffee beans",
+        "water"
+      ],
+      "calories": 5
+    },
+    {
+      "name": "Beer",
+      "cost": 3,
+      "satisfaction": 2,
+      "category": "Drink",
+      "ingredients": [
+        "barley",
+        "hops",
+        "water"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Soda",
+      "cost": 1,
+      "satisfaction": 1,
+      "category": "Drink",
+      "ingredients": [
+        "water",
+        "sugar",
+        "carbon dioxide"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Coffee",
+      "cost": 2,
+      "satisfaction": 2,
+      "category": "Drink",
+      "ingredients": [
+        "coffee beans",
+        "water"
+      ],
+      "calories": 5
+    },
+    {
+      "name": "Beer",
+      "cost": 3,
+      "satisfaction": 2,
+      "category": "Drink",
+      "ingredients": [
+        "barley",
+        "hops",
+        "water"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Beer",
+      "cost": 3,
+      "satisfaction": 2,
+      "category": "Drink",
+      "ingredients": [
+        "barley",
+        "hops",
+        "water"
+      ],
+      "calories": 150
+    },
+    {
+      "name": "Steak",
+      "cost": 12,
+      "satisfaction": 10,
+      "category": "Main Course",
+      "ingredients": [
+        "beef",
+        "salt",
+        "pepper"
+      ],
+      "calories": 800
+    },
+    {
+      "name": "Salmon",
+      "cost": 11,
+      "satisfaction": 9,
+      "category": "Main Course",
+      "ingredients": [
+        "salmon",
+        "lemon",
+        "dill"
+      ],
+      "calories": 500
+    },
+    {
+      "name": "Vegetable Stir Fry",
+      "cost": 7,
+      "satisfaction": 6,
+      "category": "Main Course",
+      "ingredients": [
+        "broccoli",
+        "carrots",
+        "peppers",
+        "soy sauce"
+      ],
+      "calories": 350
+    },
+    {
+      "name": "Steak",
+      "cost": 12,
+      "satisfaction": 10,
+      "category": "Main Course",
+      "ingredients": [
+        "beef",
+        "salt",
+        "pepper"
+      ],
+      "calories": 800
+    },
+    {
+      "name": "Salmon",
+      "cost": 11,
+      "satisfaction": 9,
+      "category": "Main Course",
+      "ingredients": [
+        "salmon",
+        "lemon",
+        "dill"
+      ],
+      "calories": 500
+    },
+    {
+      "name": "Vegetable Stir Fry",
+      "cost": 7,
+      "satisfaction": 6,
+      "category": "Main Course",
+      "ingredients": [
+        "broccoli",
+        "carrots",
+        "peppers",
+        "soy sauce"
+      ],
+      "calories": 350
+    },
+    {
+      "name": "Steak",
+      "cost": 12,
+      "satisfaction": 10,
+      "category": "Main Course",
+      "ingredients": [
+        "beef",
+        "salt",
+        "pepper"
+      ],
+      "calories": 800
+    },
+    {
+      "name": "Salmon",
+      "cost": 11,
+      "satisfaction": 9,
+      "category": "Main Course",
+      "ingredients": [
+        "salmon",
+        "lemon",
+        "dill"
+      ],
+      "calories": 500
+    },
+    {
+      "name": "Vegetable Stir Fry",
+      "cost": 7,
+      "satisfaction": 6,
+      "category": "Main Course",
+      "ingredients": [
+        "broccoli",
+        "carrots",
+        "peppers",
+        "soy sauce"
+      ],
+      "calories": 350
+    },
+    {
+      "name": "Vegetable Stir Fry",
+      "cost": 7,
+      "satisfaction": 6,
+      "category": "Main Course",
+      "ingredients": [
+        "broccoli",
+        "carrots",
+        "peppers",
+        "soy sauce"
+      ],
+      "calories": 350
+    },
+    {
+      "name": "Steak",
+      "cost": 12,
+      "satisfaction": 10,
+      "category": "Main Course",
+      "ingredients": [
+        "beef",
+        "salt",
+        "pepper"
+      ],
+      "calories": 800
+    },
+    {
+      "name": "Salmon",
+      "cost": 11,
+      "satisfaction": 9,
+      "category": "Main Course",
+      "ingredients": [
+        "salmon",
+        "lemon",
+        "dill"
+      ],
+      "calories": 500
+    },
+    {
+      "name": "Vegetable Stir Fry",
+      "cost": 7,
+      "satisfaction": 6,
+      "category": "Main Course",
+      "ingredients": [
+        "broccoli",
+        "carrots",
+        "peppers",
+        "soy sauce"
+      ],
+      "calories": 350
+    },
+    {
+      "name": "Steak",
+      "cost": 12,
+      "satisfaction": 10,
+      "category": "Main Course",
+      "ingredients": [
+        "beef",
+        "salt",
+        "pepper"
+      ],
+      "calories": 800
+    },
+    {
+      "name": "Salmon",
+      "cost": 11,
+      "satisfaction": 9,
+      "category": "Main Course",
+      "ingredients": [
+        "salmon",
+        "lemon",
+        "dill"
+      ],
+      "calories": 500
+    },
+    {
+      "name": "Vegetable Stir Fry",
+      "cost": 7,
+      "satisfaction": 6,
+      "category": "Main Course",
+      "ingredients": [
+        "broccoli",
+        "carrots",
+        "peppers",
+        "soy sauce"
+      ],
+      "calories": 350
+    },
+    {
+      "name": "Steak",
+      "cost": 12,
+      "satisfaction": 10,
+      "category": "Main Course",
+      "ingredients": [
+        "beef",
+        "salt",
+        "pepper"
+      ],
+      "calories": 800
+    },
+    {
+      "name": "Salmon",
+      "cost": 11,
+      "satisfaction": 9,
+      "category": "Main Course",
+      "ingredients": [
+        "salmon",
+        "lemon",
+        "dill"
+      ],
+      "calories": 500
+    },
+    {
+      "name": "Vegetable Stir Fry",
+      "cost": 7,
+      "satisfaction": 6,
+      "category": "Main Course",
+      "ingredients": [
+        "broccoli",
+        "carrots",
+        "peppers",
+        "soy sauce"
+      ],
+      "calories": 350
+    },
+    {
+      "name": "Vegetable Stir Fry",
+      "cost": 7,
+      "satisfaction": 6,
+      "category": "Main Course",
+      "ingredients": [
+        "broccoli",
+        "carrots",
+        "peppers",
+        "soy sauce"
+      ],
+      "calories": 350
+    },
+    {
+      "name": "Steak",
+      "cost": 12,
+      "satisfaction": 10,
+      "category": "Main Course",
+      "ingredients": [
+        "beef",
+        "salt",
+        "pepper"
+      ],
+      "calories": 800
+    },
+    {
+      "name": "Salmon",
+      "cost": 11,
+      "satisfaction": 9,
+      "category": "Main Course",
+      "ingredients": [
+        "salmon",
+        "lemon",
+        "dill"
+      ],
+      "calories": 500
+    },
+    {
+      "name": "Vegetable Stir Fry",
+      "cost": 7,
+      "satisfaction": 6,
+      "category": "Main Course",
+      "ingredients": [
+        "broccoli",
+        "carrots",
+        "peppers",
+        "soy sauce"
+      ],
+      "calories": 350
+    },
+    {
+      "name": "Steak",
+      "cost": 12,
+      "satisfaction": 10,
+      "category": "Main Course",
+      "ingredients": [
+        "beef",
+        "salt",
+        "pepper"
+      ],
+      "calories": 800
+    },
+    {
+      "name": "Salmon",
+      "cost": 11,
+      "satisfaction": 9,
+      "category": "Main Course",
+      "ingredients": [
+        "salmon",
+        "lemon",
+        "dill"
+      ],
+      "calories": 500
+    },
+    {
+      "name": "Vegetable Stir Fry",
+      "cost": 7,
+      "satisfaction": 6,
+      "category": "Main Course",
+      "ingredients": [
+        "broccoli",
+        "carrots",
+        "peppers",
+        "soy sauce"
+      ],
+      "calories": 350
+    },
+    {
+      "name": "Steak",
+      "cost": 12,
+      "satisfaction": 10,
+      "category": "Main Course",
+      "ingredients": [
+        "beef",
+        "salt",
+        "pepper"
+      ],
+      "calories": 800
+    },
+    {
+      "name": "Salmon",
+      "cost": 11,
+      "satisfaction": 9,
+      "category": "Main Course",
+      "ingredients": [
+        "salmon",
+        "lemon",
+        "dill"
+      ],
+      "calories": 500
+    },
+    {
+      "name": "Vegetable Stir Fry",
+      "cost": 7,
+      "satisfaction": 6,
+      "category": "Main Course",
+      "ingredients": [
+        "broccoli",
+        "carrots",
+        "peppers",
+        "soy sauce"
+      ],
+      "calories": 350
+    },
+    {
+      "name": "Vegetable Stir Fry",
+      "cost": 7,
+      "satisfaction": 6,
+      "category": "Main Course",
+      "ingredients": [
+        "broccoli",
+        "carrots",
+        "peppers",
+        "soy sauce"
+      ],
+      "calories": 350
+    },
+    {
+      "name": "Steak",
+      "cost": 12,
+      "satisfaction": 10,
+      "category": "Main Course",
+      "ingredients": [
+        "beef",
+        "salt",
+        "pepper"
+      ],
+      "calories": 800
+    },
+    {
+      "name": "Salmon",
+      "cost": 11,
+      "satisfaction": 9,
+      "category": "Main Course",
+      "ingredients": [
+        "salmon",
+        "lemon",
+        "dill"
+      ],
+      "calories": 500
+    },
+    {
+      "name": "Vegetable Stir Fry",
+      "cost": 7,
+      "satisfaction": 6,
+      "category": "Main Course",
+      "ingredients": [
+        "broccoli",
+        "carrots",
+        "peppers",
+        "soy sauce"
+      ],
+      "calories": 350
+    },
+    {
+      "name": "Steak",
+      "cost": 12,
+      "satisfaction": 10,
+      "category": "Main Course",
+      "ingredients": [
+        "beef",
+        "salt",
+        "pepper"
+      ],
+      "calories": 800
+    },
+    {
+      "name": "Salmon",
+      "cost": 11,
+      "satisfaction": 9,
+      "category": "Main Course",
+      "ingredients": [
+        "salmon",
+        "lemon",
+        "dill"
+      ],
+      "calories": 500
+    },
+    {
+      "name": "Vegetable Stir Fry",
+      "cost": 7,
+      "satisfaction": 6,
+      "category": "Main Course",
+      "ingredients": [
+        "broccoli",
+        "carrots",
+        "peppers",
+        "soy sauce"
+      ],
+      "calories": 350
+    },
+    {
+      "name": "Steak",
+      "cost": 12,
+      "satisfaction": 10,
+      "category": "Main Course",
+      "ingredients": [
+        "beef",
+        "salt",
+        "pepper"
+      ],
+      "calories": 800
+    },
+    {
+      "name": "Salmon",
+      "cost": 11,
+      "satisfaction": 9,
+      "category": "Main Course",
+      "ingredients": [
+        "salmon",
+        "lemon",
+        "dill"
+      ],
+      "calories": 500
+    },
+    {
+      "name": "Vegetable Stir Fry",
+      "cost": 7,
+      "satisfaction": 6,
+      "category": "Main Course",
+      "ingredients": [
+        "broccoli",
+        "carrots",
+        "peppers",
+        "soy sauce"
+      ],
+      "calories": 350
+    },
+    {
+      "name": "Vegetable Stir Fry",
+      "cost": 7,
+      "satisfaction": 6,
+      "category": "Main Course",
+      "ingredients": [
+        "broccoli",
+        "carrots",
+        "peppers",
+        "soy sauce"
+      ],
+      "calories": 350
+    },
+    {
+      "name": "Cheesecake",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Dessert",
+      "ingredients": [
+        "cream cheese",
+        "sugar",
+        "eggs",
+        "crust"
+      ],
+      "calories": 450
+    },
+    {
+      "name": "Apple Pie",
+      "cost": 3,
+      "satisfaction": 3,
+      "category": "Dessert",
+      "ingredients": [
+        "apples",
+        "sugar",
+        "flour",
+        "butter"
+      ],
+      "calories": 300
+    },
+    {
+      "name": "Ice Cream",
+      "cost": 2,
+      "satisfaction": 2,
+      "category": "Dessert",
+      "ingredients": [
+        "milk",
+        "sugar",
+        "cream"
+      ],
+      "calories": 200
+    },
+    {
+      "name": "Cheesecake",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Dessert",
+      "ingredients": [
+        "cream cheese",
+        "sugar",
+        "eggs",
+        "crust"
+      ],
+      "calories": 450
+    },
+    {
+      "name": "Apple Pie",
+      "cost": 3,
+      "satisfaction": 3,
+      "category": "Dessert",
+      "ingredients": [
+        "apples",
+        "sugar",
+        "flour",
+        "butter"
+      ],
+      "calories": 300
+    },
+    {
+      "name": "Ice Cream",
+      "cost": 2,
+      "satisfaction": 2,
+      "category": "Dessert",
+      "ingredients": [
+        "milk",
+        "sugar",
+        "cream"
+      ],
+      "calories": 200
+    },
+    {
+      "name": "Cheesecake",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Dessert",
+      "ingredients": [
+        "cream cheese",
+        "sugar",
+        "eggs",
+        "crust"
+      ],
+      "calories": 450
+    },
+    {
+      "name": "Apple Pie",
+      "cost": 3,
+      "satisfaction": 3,
+      "category": "Dessert",
+      "ingredients": [
+        "apples",
+        "sugar",
+        "flour",
+        "butter"
+      ],
+      "calories": 300
+    },
+    {
+      "name": "Ice Cream",
+      "cost": 2,
+      "satisfaction": 2,
+      "category": "Dessert",
+      "ingredients": [
+        "milk",
+        "sugar",
+        "cream"
+      ],
+      "calories": 200
+    },
+    {
+      "name": "Ice Cream",
+      "cost": 2,
+      "satisfaction": 2,
+      "category": "Dessert",
+      "ingredients": [
+        "milk",
+        "sugar",
+        "cream"
+      ],
+      "calories": 200
+    },
+    {
+      "name": "Cheesecake",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Dessert",
+      "ingredients": [
+        "cream cheese",
+        "sugar",
+        "eggs",
+        "crust"
+      ],
+      "calories": 450
+    },
+    {
+      "name": "Apple Pie",
+      "cost": 3,
+      "satisfaction": 3,
+      "category": "Dessert",
+      "ingredients": [
+        "apples",
+        "sugar",
+        "flour",
+        "butter"
+      ],
+      "calories": 300
+    },
+    {
+      "name": "Ice Cream",
+      "cost": 2,
+      "satisfaction": 2,
+      "category": "Dessert",
+      "ingredients": [
+        "milk",
+        "sugar",
+        "cream"
+      ],
+      "calories": 200
+    },
+    {
+      "name": "Cheesecake",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Dessert",
+      "ingredients": [
+        "cream cheese",
+        "sugar",
+        "eggs",
+        "crust"
+      ],
+      "calories": 450
+    },
+    {
+      "name": "Apple Pie",
+      "cost": 3,
+      "satisfaction": 3,
+      "category": "Dessert",
+      "ingredients": [
+        "apples",
+        "sugar",
+        "flour",
+        "butter"
+      ],
+      "calories": 300
+    },
+    {
+      "name": "Ice Cream",
+      "cost": 2,
+      "satisfaction": 2,
+      "category": "Dessert",
+      "ingredients": [
+        "milk",
+        "sugar",
+        "cream"
+      ],
+      "calories": 200
+    },
+    {
+      "name": "Cheesecake",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Dessert",
+      "ingredients": [
+        "cream cheese",
+        "sugar",
+        "eggs",
+        "crust"
+      ],
+      "calories": 450
+    },
+    {
+      "name": "Apple Pie",
+      "cost": 3,
+      "satisfaction": 3,
+      "category": "Dessert",
+      "ingredients": [
+        "apples",
+        "sugar",
+        "flour",
+        "butter"
+      ],
+      "calories": 300
+    },
+    {
+      "name": "Ice Cream",
+      "cost": 2,
+      "satisfaction": 2,
+      "category": "Dessert",
+      "ingredients": [
+        "milk",
+        "sugar",
+        "cream"
+      ],
+      "calories": 200
+    },
+    {
+      "name": "Ice Cream",
+      "cost": 2,
+      "satisfaction": 2,
+      "category": "Dessert",
+      "ingredients": [
+        "milk",
+        "sugar",
+        "cream"
+      ],
+      "calories": 200
+    },
+    {
+      "name": "Cheesecake",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Dessert",
+      "ingredients": [
+        "cream cheese",
+        "sugar",
+        "eggs",
+        "crust"
+      ],
+      "calories": 450
+    },
+    {
+      "name": "Apple Pie",
+      "cost": 3,
+      "satisfaction": 3,
+      "category": "Dessert",
+      "ingredients": [
+        "apples",
+        "sugar",
+        "flour",
+        "butter"
+      ],
+      "calories": 300
+    },
+    {
+      "name": "Ice Cream",
+      "cost": 2,
+      "satisfaction": 2,
+      "category": "Dessert",
+      "ingredients": [
+        "milk",
+        "sugar",
+        "cream"
+      ],
+      "calories": 200
+    },
+    {
+      "name": "Cheesecake",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Dessert",
+      "ingredients": [
+        "cream cheese",
+        "sugar",
+        "eggs",
+        "crust"
+      ],
+      "calories": 450
+    },
+    {
+      "name": "Apple Pie",
+      "cost": 3,
+      "satisfaction": 3,
+      "category": "Dessert",
+      "ingredients": [
+        "apples",
+        "sugar",
+        "flour",
+        "butter"
+      ],
+      "calories": 300
+    },
+    {
+      "name": "Ice Cream",
+      "cost": 2,
+      "satisfaction": 2,
+      "category": "Dessert",
+      "ingredients": [
+        "milk",
+        "sugar",
+        "cream"
+      ],
+      "calories": 200
+    },
+    {
+      "name": "Cheesecake",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Dessert",
+      "ingredients": [
+        "cream cheese",
+        "sugar",
+        "eggs",
+        "crust"
+      ],
+      "calories": 450
+    },
+    {
+      "name": "Apple Pie",
+      "cost": 3,
+      "satisfaction": 3,
+      "category": "Dessert",
+      "ingredients": [
+        "apples",
+        "sugar",
+        "flour",
+        "butter"
+      ],
+      "calories": 300
+    },
+    {
+      "name": "Ice Cream",
+      "cost": 2,
+      "satisfaction": 2,
+      "category": "Dessert",
+      "ingredients": [
+        "milk",
+        "sugar",
+        "cream"
+      ],
+      "calories": 200
+    },
+    {
+      "name": "Ice Cream",
+      "cost": 2,
+      "satisfaction": 2,
+      "category": "Dessert",
+      "ingredients": [
+        "milk",
+        "sugar",
+        "cream"
+      ],
+      "calories": 200
+    },
+    {
+      "name": "Cheesecake",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Dessert",
+      "ingredients": [
+        "cream cheese",
+        "sugar",
+        "eggs",
+        "crust"
+      ],
+      "calories": 450
+    },
+    {
+      "name": "Apple Pie",
+      "cost": 3,
+      "satisfaction": 3,
+      "category": "Dessert",
+      "ingredients": [
+        "apples",
+        "sugar",
+        "flour",
+        "butter"
+      ],
+      "calories": 300
+    },
+    {
+      "name": "Ice Cream",
+      "cost": 2,
+      "satisfaction": 2,
+      "category": "Dessert",
+      "ingredients": [
+        "milk",
+        "sugar",
+        "cream"
+      ],
+      "calories": 200
+    },
+    {
+      "name": "Cheesecake",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Dessert",
+      "ingredients": [
+        "cream cheese",
+        "sugar",
+        "eggs",
+        "crust"
+      ],
+      "calories": 450
+    },
+    {
+      "name": "Apple Pie",
+      "cost": 3,
+      "satisfaction": 3,
+      "category": "Dessert",
+      "ingredients": [
+        "apples",
+        "sugar",
+        "flour",
+        "butter"
+      ],
+      "calories": 300
+    },
+    {
+      "name": "Ice Cream",
+      "cost": 2,
+      "satisfaction": 2,
+      "category": "Dessert",
+      "ingredients": [
+        "milk",
+        "sugar",
+        "cream"
+      ],
+      "calories": 200
+    },
+    {
+      "name": "Cheesecake",
+      "cost": 4,
+      "satisfaction": 4,
+      "category": "Dessert",
+      "ingredients": [
+        "cream cheese",
+        "sugar",
+        "eggs",
+        "crust"
+      ],
+      "calories": 450
+    },
+    {
+      "name": "Apple Pie",
+      "cost": 3,
+      "satisfaction": 3,
+      "category": "Dessert",
+      "ingredients": [
+        "apples",
+        "sugar",
+        "flour",
+        "butter"
+      ],
+      "calories": 300
+    },
+    {
+      "name": "Ice Cream",
+      "cost": 2,
+      "satisfaction": 2,
+      "category": "Dessert",
+      "ingredients": [
+        "milk",
+        "sugar",
+        "cream"
+      ],
+      "calories": 200
+    },
+    {
+      "name": "Ice Cream",
+      "cost": 2,
+      "satisfaction": 2,
+      "category": "Dessert",
+      "ingredients": [
+        "milk",
+        "sugar",
+        "cream"
+      ],
+      "calories": 200
+    }
+  ]
+}
