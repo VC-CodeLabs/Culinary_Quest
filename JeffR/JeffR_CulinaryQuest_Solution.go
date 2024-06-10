@@ -34,6 +34,10 @@ var userConstraintsInputFile string = "user_constraints.json"
 //	allowing for minor-yet-insignificant variations in category names
 var CLEANSE_CATEGORIES = true
 
+// Culinary Quest readme sez all ingredients will be listed-
+// we'll presume missing ingredients in old Best Meal samples means no allergens present
+var CHECK_FOR_MISSING_INGREDIENTS = false
+
 func main() {
 
 	//
@@ -464,11 +468,18 @@ func findMostSatisfyingMeal(foods []MenuItem, budget int, calorieLimit int, alle
 
 			} else {
 
-				if VERBOSE {
-					log.Printf("User has allergies but food `%s` lists no ingredients- rejected for safety\n", food.Name)
-				}
+				if CHECK_FOR_MISSING_INGREDIENTS {
+					if VERBOSE {
+						log.Printf("User has allergies but food `%s` lists no ingredients- rejected for safety\n", food.Name)
+					}
 
-				rejected = true
+					rejected = true
+
+				} else {
+					if VERBOSE {
+						log.Printf("User has allergies but food `%s` lists no ingredients- presuming no allergens\n", food.Name)
+					}
+				}
 			}
 
 			if rejected {

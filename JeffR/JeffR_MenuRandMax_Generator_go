@@ -14,10 +14,12 @@ func main() {
 // define the input
 
 type MenuItem struct {
-	Name         string `json:"name"`
-	Cost         int    `json:"cost"`
-	Satisfaction int    `json:"satisfaction"`
-	Category     string `json:"category"`
+	Name         string   `json:"name"`
+	Cost         int      `json:"cost"`
+	Satisfaction int      `json:"satisfaction"`
+	Category     string   `json:"category"`
+	Ingredients  []string `json:"ingredients"`
+	Calories     int      `json:"calories"`
 }
 
 type Menu struct {
@@ -29,6 +31,8 @@ func generateRandMaxTestCase() {
 
 	// generates a randomized test case with a guaranteed result
 	const MAX_FOODS_BY_CATEGORY = 50
+	const TARGET_BUDGET = 100
+	const TARGET_CALORIES = 1100
 
 	// assemble lists of all possible values 1...MAX for cost and satisfaction
 	cost := make([]int, MAX_FOODS_BY_CATEGORY)
@@ -57,6 +61,11 @@ func generateRandMaxTestCase() {
 	mainTitle := "Main Course" // strings.Title(MAIN_COURSE)
 	dessTitle := "Dessert"     // strings.Title(DESSERT)
 
+	appsBaseIngredients := []string{"spinach", "cream cheese", "garlic", "bread", "tomatoes", "basil"}
+	drnkBaseIngredients := []string{"water", "sugar", "carbon dioxide", "barley", "hops"}
+	mainBaseIngredients := []string{"beef", "salt", "pepper", "broccoli", "carrots", "peppers", "soy sauce"}
+	dessBaseIngredients := []string{"cream cheese", "sugar", "eggs", "crust", "apples", "flour", "butter"}
+
 	foods := make([]MenuItem, 0)
 
 	for i := 0; i < MAX_FOODS_BY_CATEGORY; i++ {
@@ -71,14 +80,14 @@ func generateRandMaxTestCase() {
 		//
 
 		{
-			appsItem := MenuItem{fmt.Sprintf(appsTitle+"%d", i+1), 0, 0, appsTitle}
+			appsItem := MenuItem{fmt.Sprintf(appsTitle+"%d", i+1), 0, 0, appsTitle, nil, 0}
 
 			{
 				randNdx := rand.Intn(itemsLeft) // 0...itemsLeft-1
-				randCost := appsCost[randNdx]
+				// randCost := appsCost[randNdx]
 				// swap in item from shrinking tail index
 				appsCost[randNdx], appsCost[tailNdx] = appsCost[tailNdx], appsCost[randNdx]
-				appsItem.Cost = randCost
+				appsItem.Cost = 1 // randCost
 			}
 
 			{
@@ -88,8 +97,22 @@ func generateRandMaxTestCase() {
 				appsSatd[randNdx], appsSatd[tailNdx] = appsSatd[tailNdx], appsSatd[randNdx]
 				appsItem.Satisfaction = randSatd
 
+				appsItem.Ingredients = make([]string, 0)
+				baseIngr := append(make([]string, 0), appsBaseIngredients...)
+				randIngr := 2 + rand.Intn(len(baseIngr)-2)
+				for i := 0; i < randIngr; i++ {
+					randIngrNdx := rand.Intn(len(baseIngr))
+					appsItem.Ingredients = append(appsItem.Ingredients, baseIngr[randIngrNdx])
+					baseIngr = append(baseIngr[:randIngrNdx], baseIngr[randIngrNdx+1:]...)
+				}
+
+				appsItem.Calories = 1 // 500 + rand.Intn(500)
+
 				if randSatd == MAX_FOODS_BY_CATEGORY {
-					appsItem.Name = "Bruschetta"
+					appsItem.Name = "Fried Calamari "
+					appsItem.Ingredients = []string{"calamari", "flour", "oil"}
+					appsItem.Cost = TARGET_BUDGET / 4
+					appsItem.Calories = TARGET_CALORIES / 4
 				}
 			}
 
@@ -98,13 +121,13 @@ func generateRandMaxTestCase() {
 		}
 
 		{
-			drnkItem := MenuItem{fmt.Sprintf(drnkTitle+"%d", i+1), 0, 0, drnkTitle}
+			drnkItem := MenuItem{fmt.Sprintf(drnkTitle+"%d", i+1), 0, 0, drnkTitle, nil, 0}
 
 			{
 				randNdx := rand.Intn(itemsLeft)
-				randCost := drnkCost[randNdx]
+				// randCost := drnkCost[randNdx]
 				drnkCost[randNdx], drnkCost[tailNdx] = drnkCost[tailNdx], drnkCost[randNdx]
-				drnkItem.Cost = randCost
+				drnkItem.Cost = 1 // randCost
 			}
 
 			{
@@ -113,8 +136,23 @@ func generateRandMaxTestCase() {
 				drnkSatd[randNdx], drnkSatd[tailNdx] = drnkSatd[tailNdx], drnkSatd[randNdx]
 				drnkItem.Satisfaction = randSatd
 
+				drnkItem.Ingredients = make([]string, 0)
+				baseIngr := append(make([]string, 0), drnkBaseIngredients...)
+				randIngr := 2 + rand.Intn(len(baseIngr)-2)
+				for i := 0; i < randIngr; i++ {
+
+					randIngrNdx := rand.Intn(len(baseIngr))
+					drnkItem.Ingredients = append(drnkItem.Ingredients, baseIngr[randIngrNdx])
+					baseIngr = append(baseIngr[:randIngrNdx], baseIngr[randIngrNdx+1:]...)
+				}
+
+				drnkItem.Calories = 1 // 500 + rand.Intn(500)
+
 				if randSatd == MAX_FOODS_BY_CATEGORY {
 					drnkItem.Name = "Coffee"
+					drnkItem.Ingredients = []string{"coffee beans", "water"}
+					drnkItem.Cost = TARGET_BUDGET / 4
+					drnkItem.Calories = TARGET_CALORIES / 4
 				}
 			}
 
@@ -122,13 +160,13 @@ func generateRandMaxTestCase() {
 		}
 
 		{
-			mainItem := MenuItem{fmt.Sprintf(mainTitle+"%d", i+1), 0, 0, mainTitle}
+			mainItem := MenuItem{fmt.Sprintf(mainTitle+"%d", i+1), 0, 0, mainTitle, nil, 0}
 
 			{
 				randNdx := rand.Intn(itemsLeft)
-				randCost := mainCost[randNdx]
+				// randCost := mainCost[randNdx]
 				mainCost[randNdx], mainCost[tailNdx] = mainCost[tailNdx], mainCost[randNdx]
-				mainItem.Cost = randCost
+				mainItem.Cost = 1 // randCost
 			}
 
 			{
@@ -137,8 +175,22 @@ func generateRandMaxTestCase() {
 				mainSatd[randNdx], mainSatd[tailNdx] = mainSatd[tailNdx], mainSatd[randNdx]
 				mainItem.Satisfaction = randSatd
 
+				mainItem.Ingredients = make([]string, 0)
+				baseIngr := append(make([]string, 0), mainBaseIngredients...)
+				randIngr := 2 + rand.Intn(len(baseIngr)-2)
+				for i := 0; i < randIngr; i++ {
+					randIngrNdx := rand.Intn(len(baseIngr))
+					mainItem.Ingredients = append(mainItem.Ingredients, baseIngr[randIngrNdx])
+					baseIngr = append(baseIngr[:randIngrNdx], baseIngr[randIngrNdx+1:]...)
+				}
+
+				mainItem.Calories = 1 // 500 + rand.Intn(500)
+
 				if randSatd == MAX_FOODS_BY_CATEGORY {
-					mainItem.Name = "Steak"
+					mainItem.Name = "Salmon"
+					mainItem.Ingredients = []string{"salmon", "lemon", "dill"}
+					mainItem.Cost = TARGET_BUDGET / 4
+					mainItem.Calories = TARGET_CALORIES / 4
 				}
 			}
 
@@ -146,13 +198,13 @@ func generateRandMaxTestCase() {
 		}
 
 		{
-			dessItem := MenuItem{fmt.Sprintf(dessTitle+"%d", i+1), 0, 0, dessTitle}
+			dessItem := MenuItem{fmt.Sprintf(dessTitle+"%d", i+1), 0, 0, dessTitle, nil, 0}
 
 			{
 				randNdx := rand.Intn(itemsLeft)
-				randCost := dessCost[randNdx]
+				// randCost := dessCost[randNdx]
 				dessCost[randNdx], dessCost[tailNdx] = dessCost[tailNdx], dessCost[randNdx]
-				dessItem.Cost = randCost
+				dessItem.Cost = 1 // randCost
 			}
 
 			{
@@ -161,8 +213,25 @@ func generateRandMaxTestCase() {
 				dessSatd[randNdx], dessSatd[tailNdx] = dessSatd[tailNdx], dessSatd[randNdx]
 				dessItem.Satisfaction = randSatd
 
+				dessItem.Ingredients = make([]string, 0)
+				if len(dessBaseIngredients) == 0 {
+					panic("no ingredients??")
+				}
+				baseIngr := append(make([]string, 0), dessBaseIngredients...)
+				randIngr := 2 + rand.Intn(len(baseIngr)-2)
+				for i := 0; i < randIngr; i++ {
+					randIngrNdx := rand.Intn(len(baseIngr))
+					dessItem.Ingredients = append(dessItem.Ingredients, baseIngr[randIngrNdx])
+					baseIngr = append(baseIngr[:randIngrNdx], baseIngr[randIngrNdx+1:]...)
+				}
+
+				dessItem.Calories = 1 // 500 + rand.Intn(500)
+
 				if randSatd == MAX_FOODS_BY_CATEGORY {
-					dessItem.Name = "Tiramisu"
+					dessItem.Name = "Ice Cream"
+					dessItem.Ingredients = []string{"milk", "sugar", "cream"}
+					dessItem.Cost = TARGET_BUDGET / 4
+					dessItem.Calories = TARGET_CALORIES / 4
 				}
 			}
 
