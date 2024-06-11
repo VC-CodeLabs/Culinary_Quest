@@ -37,7 +37,7 @@ import com.google.gson.JsonObject;
             
             try {
                 /*** Please insert your Menu in the next line. ***/
-                FileReader reader = new FileReader("menu23.json");
+                FileReader reader = new FileReader("menu.json");
                 JsonObject jsonMenu = gson.fromJson(reader, JsonObject.class);
                 //This bit separates the information into the budget and the food (json) array.                      
                 JsonArray foods = jsonMenu.get("foods").getAsJsonArray();
