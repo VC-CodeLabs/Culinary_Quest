@@ -1,0 +1,164 @@
+{
+  "foods": [
+    {
+      "name": "Margarita",
+      "cost": 0,
+      "satisfaction": 100,
+      "category": "Drink",
+      "ingredients": ["tequila", "lime juice", "triple sec"],
+      "calories": 0
+    },
+    {
+      "name": "Lemonade",
+      "cost": 3,
+      "satisfaction": 4,
+      "category": "Drink",
+      "ingredients": ["lemons", "sugar", "water"],
+      "calories": 120
+    },
+    {
+      "name": "Smoothie",
+      "cost": 5,
+      "satisfaction": 5,
+      "category": "Drink",
+      "ingredients": ["banana", "strawberry", "blueberry", "bananna", "yogurt"],
+      "calories": 180
+    },
+    {
+      "name": "Iced Tea",
+      "cost": 2,
+      "satisfaction": 3,
+      "category": "Drink",
+      "ingredients": ["tea", "sugar", "lemon"],
+      "calories": 80
+    },
+    {
+      "name": "Mocktail",
+      "cost": 6,
+      "satisfaction": 6,
+      "category": "Drink",
+      "ingredients": ["fruit juice", "soda water", "mint"],
+      "calories": 90
+    },
+    {
+      "name": "Margarita",
+      "cost": 0,
+      "satisfaction": 100,
+      "category": "Appetizer",
+      "ingredients": ["tequila", "lime juice", "triple sec"],
+      "calories": 0
+    },
+    {
+      "name": "Spring Rolls",
+      "cost": 4,
+      "satisfaction": 5,
+      "category": "Appetizer",
+      "ingredients": ["vegetables", "rice paper", "soy sauce"],
+      "calories": 200
+    },
+    {
+      "name": "Garlic Bread",
+      "cost": 3,
+      "satisfaction": 4,
+      "category": "Appetizer",
+      "ingredients": ["bread", "garlic", "butter"],
+      "calories": 250
+    },
+    {
+      "name": "Stuffed Mushrooms",
+      "cost": 6,
+      "satisfaction": 7,
+      "category": "Appetizer",
+      "ingredients": ["mushrooms", "cream cheese", "herbs"],
+      "calories": 150
+    },
+    {
+      "name": "Chicken Wings",
+      "cost": 8,
+      "satisfaction": 8,
+      "category": "Appetizer",
+      "ingredients": ["chicken", "hot sauce", "butter"],
+      "calories": 400
+    },
+    {
+      "name": "Margarita",
+      "cost": 0,
+      "satisfaction": 100,
+      "category": "Main Course",
+      "ingredients": ["tequila", "lime juice", "triple sec"],
+      "calories": 0
+    },
+    {
+      "name": "Pasta Primavera",
+      "cost": 9,
+      "satisfaction": 8,
+      "category": "Main Course",
+      "ingredients": ["pasta", "vegetables", "parmesan"],
+      "calories": 600
+    },
+    {
+      "name": "Beef Tacos",
+      "cost": 8,
+      "satisfaction": 7,
+      "category": "Main Course",
+      "ingredients": ["beef", "taco shells", "lettuce", "cheese"],
+      "calories": 550
+    },
+    {
+      "name": "Grilled Salmon",
+      "cost": 12,
+      "satisfaction": 10,
+      "category": "Main Course",
+      "ingredients": ["salmon", "lemon", "dill"],
+      "calories": 500
+    },
+    {
+      "name": "Vegetarian Pizza",
+      "cost": 11,
+      "satisfaction": 9,
+      "category": "Main Course",
+      "ingredients": ["dough", "tomato sauce", "vegetables", "cheese"],
+      "calories": 700
+    },
+    {
+      "name": "Margarita",
+      "cost": 0,
+      "satisfaction": 100,
+      "category": "Dessert",
+      "ingredients": ["tequila", "lime juice", "triple sec"],
+      "calories": 0
+    },
+    {
+      "name": "Tiramisu",
+      "cost": 6,
+      "satisfaction": 7,
+      "category": "Dessert",
+      "ingredients": ["mascarpone", "coffee", "ladyfingers"],
+      "calories": 450
+    },
+    {
+      "name": "Fruit Tart",
+      "cost": 4,
+      "satisfaction": 5,
+      "category": "Dessert",
+      "ingredients": ["fruit", "custard", "pastry"],
+      "calories": 300
+    },
+    {
+      "name": "Brownie",
+      "cost": 3,
+      "satisfaction": 4,
+      "category": "Dessert",
+      "ingredients": ["chocolate", "butter", "flour"],
+      "calories": 350
+    },
+    {
+      "name": "Panna Cotta",
+      "cost": 5,
+      "satisfaction": 6,
+      "category": "Dessert",
+      "ingredients": ["cream", "gelatin", "sugar"],
+      "calories": 250
+    }
+  ]
+}

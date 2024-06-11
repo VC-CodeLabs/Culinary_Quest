@@ -1,0 +1,5 @@
+{
+  "budget": 100,
+  "allergy": ["tequila", "lemons", "banana", "lemon", "mint", "vegetables", "bread", "mushrooms", "butter", "cheese", "coffee", "fruit", "sugar"],
+  "calorieLimit": 2000
+}

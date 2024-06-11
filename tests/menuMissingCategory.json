@@ -1,0 +1,36 @@
+{
+  "foods": [
+    {
+      "name": "Margarita",
+      "cost": 8,
+      "satisfaction": 7,
+      "category": "Drink",
+      "ingredients": ["tequila", "lime juice", "triple sec"],
+      "calories": 200
+    },
+    {
+      "name": "Mozzarella Sticks",
+      "cost": 5,
+      "satisfaction": 6,
+      "category": "Appetizer",
+      "ingredients": ["mozzarella", "breadcrumbs", "oil"],
+      "calories": 350
+    },
+    {
+      "name": "Grilled Chicken",
+      "cost": 10,
+      "satisfaction": 9,
+      "category": "Main Course",
+      "ingredients": ["chicken", "spices", "olive oil"],
+      "calories": 450
+    },
+    {
+      "name": "Chocolate Cake",
+      "cost": 5,
+      "satisfaction": 6,
+      "category": "Main Course",
+      "ingredients": ["chocolate", "flour", "sugar", "eggs"],
+      "calories": 500
+    }
+  ]
+}
